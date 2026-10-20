@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cuebook Agent Brief"
+  short_description: "Find commands and compose agent task briefs"
+  default_prompt: "Use $cuebook-agent-brief to build a scoped bug-fixing brief for my project."

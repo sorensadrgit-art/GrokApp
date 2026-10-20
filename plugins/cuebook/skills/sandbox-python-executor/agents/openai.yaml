@@ -1,0 +1,9 @@
+interface:
+  display_name: "Sandbox Python Executor"
+  short_description: "Run deterministic checks using host Python"
+  default_prompt: "Use $sandbox-python-executor to verify the Cuebook catalog using the available host Python runtime."
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: false

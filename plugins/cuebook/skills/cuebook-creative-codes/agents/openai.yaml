@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cuebook Creative Codes"
+  short_description: "Find creative codes and combine prompt directions"
+  default_prompt: "Use $cuebook-creative-codes to find codes for a cinematic luxury product image."

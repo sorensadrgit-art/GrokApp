@@ -1,0 +1,9 @@
+interface:
+  display_name: "Host Workspace Operator"
+  short_description: "Read, search, and edit authorized workspace files"
+  default_prompt: "Use $host-workspace-operator to inspect the current workspace, perform the requested changes, and verify them."
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: false

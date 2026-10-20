@@ -7,6 +7,10 @@
     "nf3": "0.3.17"
   },
   "scripts": {
+    "plugin:sync": "node --experimental-strip-types plugin-tools/catalog/sync-catalogs.mjs && python3 plugin-tools/sync-manifest.py",
+    "plugin:check": "node --experimental-strip-types plugin-tools/catalog/sync-catalogs.mjs --check && python3 plugin-tools/sync-manifest.py --check && python3 plugin-tools/package/package_plugin.py validate plugins/cuebook",
+    "plugin:test": "python3 -B -m unittest discover -s plugin-tools/catalog -p 'test_*.py' && python3 -B -m unittest discover -s plugin-tools/package -p 'test_*.py'",
+    "plugin:pack": "npm run plugin:check && python3 plugin-tools/package/package_plugin.py build plugins/cuebook artifacts/cuebook-1.0.0.zip",
     "dev": "node scripts/with-app-env.mjs vite dev --host 0.0.0.0 --port 8080",
     "build": "node scripts/with-app-env.mjs vite build && npm run db:migrate",
     "db:migrate": "node scripts/migrate.mjs",

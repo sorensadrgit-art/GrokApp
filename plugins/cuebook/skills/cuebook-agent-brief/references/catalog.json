@@ -1,0 +1,2257 @@
+{
+  "schema_version": 1,
+  "book": "agent",
+  "source": {
+    "repository": "https://github.com/sorensadrgit-art/GrokApp",
+    "revision": "52a5da026718473d25a94890b797989374b959ad",
+    "files": [
+      {
+        "path": "src/lib/agent-catalog.ts",
+        "sha256": "613fed4f389637a0b123054fda13b7f6996ee680d9f9db8ad735f12201432d31"
+      },
+      {
+        "path": "src/lib/catalog.ts",
+        "sha256": "9c4d123c9678e2b886bd303cb0b4be5369dde7488e0b9fdcb2ae78fd92438000"
+      },
+      {
+        "path": "src/data/codes.json",
+        "sha256": "1bfc073d6f00c44d03dd1e9c3111cebcd525bb332475f4ea7cb30c31899388bd"
+      },
+      {
+        "path": "src/components/cuebook.tsx",
+        "sha256": "5adae75ca656da9da10f86fa75cd28f81bbbd46185a6e03effde3ca2fa8ebe89"
+      }
+    ]
+  },
+  "composition_limit": 6,
+  "groups": [
+    {
+      "id": "control",
+      "label": "Control",
+      "blurb": "How the agent should behave on this task. Put these first when you care about the shape of the work."
+    },
+    {
+      "id": "read",
+      "label": "Read",
+      "blurb": "Look before touching. Use these when you want a map, a trace, or an explanation instead of a change."
+    },
+    {
+      "id": "build",
+      "label": "Build",
+      "blurb": "Make the change in the codebase that already exists. Match its patterns."
+    },
+    {
+      "id": "repair",
+      "label": "Repair",
+      "blurb": "Find the cause, fix that, and leave a check behind. No drive-by cleanup."
+    },
+    {
+      "id": "ship",
+      "label": "Ship",
+      "blurb": "Prove it works, including on a phone, and say what's left in plain language."
+    },
+    {
+      "id": "research",
+      "label": "Research",
+      "blurb": "Separate what was found from what was guessed. Keep the source next to the claim."
+    },
+    {
+      "id": "write",
+      "label": "Write",
+      "blurb": "Spec, rewrite, and the messages around the work. Keep the meaning you already have."
+    },
+    {
+      "id": "design",
+      "label": "Design",
+      "blurb": "Screens, layout, and critique. One primary action. Use the tokens that are already there."
+    },
+    {
+      "id": "picture",
+      "label": "Picture",
+      "blurb": "Direction for a still or a clip. The picture book has the rest of the visual codes."
+    },
+    {
+      "id": "browser",
+      "label": "Browser",
+      "blurb": "Operate a page you name. Don't wander, don't sign in, don't guess missing fields."
+    },
+    {
+      "id": "study",
+      "label": "Study",
+      "blurb": "Teach, quiz, and drill. One question at a time when the command says to wait."
+    },
+    {
+      "id": "decide",
+      "label": "Decide",
+      "blurb": "Options, a call, and the risks. Say what would change the answer."
+    }
+  ],
+  "presets": [
+    {
+      "id": "fix",
+      "label": "Fix a bug",
+      "ids": [
+        "debug",
+        "repro",
+        "fix",
+        "tests",
+        "verify"
+      ]
+    },
+    {
+      "id": "ship",
+      "label": "Ship",
+      "ids": [
+        "scope",
+        "implement",
+        "preview",
+        "done",
+        "changelog"
+      ]
+    },
+    {
+      "id": "review",
+      "label": "Review",
+      "ids": [
+        "diff",
+        "review",
+        "security"
+      ]
+    },
+    {
+      "id": "plan",
+      "label": "Plan only",
+      "ids": [
+        "scope",
+        "plan",
+        "ask"
+      ]
+    },
+    {
+      "id": "decide",
+      "label": "Decide",
+      "ids": [
+        "alt3",
+        "decide",
+        "riskmap"
+      ]
+    },
+    {
+      "id": "teach",
+      "label": "Teach",
+      "ids": [
+        "teachme",
+        "quizme",
+        "gaps"
+      ]
+    },
+    {
+      "id": "picture",
+      "label": "Direct a still",
+      "ids": [
+        "still",
+        "labels",
+        "codes"
+      ]
+    },
+    {
+      "id": "browse",
+      "label": "Browse",
+      "ids": [
+        "open",
+        "extract",
+        "no-login"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "scope",
+      "code": "/scope",
+      "group": "control",
+      "meaning": "Restate the job, the done-condition, and what you will not touch.",
+      "when": "The task is fuzzy, or you want the agent to show it understood before editing.",
+      "avoid": "Don't start editing in the same breath. Don't widen the job.",
+      "steps": [
+        "Restate the job in one short paragraph.",
+        "State the done-condition as something you can check.",
+        "List what is out of scope.",
+        "Continue only if nothing material is ambiguous. Otherwise ask one question."
+      ],
+      "example": "Add a saved-filters view to the list. Don't redesign the navigation."
+    },
+    {
+      "id": "plan",
+      "code": "/plan",
+      "group": "control",
+      "meaning": "Write the plan only. No edits, no installs, no servers.",
+      "when": "You want the approach before any file changes.",
+      "avoid": "Don't implement 'while you're in there.' Don't pad the plan with optional ideas.",
+      "steps": [
+        "Give ordered steps.",
+        "Name the files you expect to touch.",
+        "Name the risks and how you'll check the result.",
+        "Stop after the plan."
+      ],
+      "example": "Plan how you'll add offline starring without an account."
+    },
+    {
+      "id": "go",
+      "code": "/go",
+      "group": "control",
+      "meaning": "Carry out the plan you already have.",
+      "when": "A plan exists and you want it executed, not reopened.",
+      "avoid": "Don't relitigate the plan unless a step is blocked.",
+      "steps": [
+        "Follow the plan in order.",
+        "If a step is blocked, stop and say why.",
+        "Don't add steps that were not in the plan."
+      ],
+      "example": "Go. The plan we agreed is the one in your last message."
+    },
+    {
+      "id": "only",
+      "code": "/only",
+      "group": "control",
+      "meaning": "Change only what the task needs.",
+      "when": "You want a fix or feature without a cleanup tour.",
+      "avoid": "Don't refactor neighbors, rename for taste, or add settings nobody asked for.",
+      "steps": [
+        "Touch the smallest set of files that solves the task.",
+        "Leave unrelated code as you found it.",
+        "If you notice a separate issue, mention it. Don't fix it."
+      ],
+      "example": "The empty state says 'No items' even when the request failed. Fix the copy only."
+    },
+    {
+      "id": "proceed",
+      "code": "/proceed",
+      "group": "control",
+      "meaning": "State your assumptions, pick the safest, and continue.",
+      "when": "A few details are open but you don't want a questionnaire.",
+      "avoid": "Don't stop for a preference you can default safely. Don't hide a risky assumption.",
+      "steps": [
+        "List assumptions, one line each.",
+        "Mark the one you are using.",
+        "Continue."
+      ],
+      "example": "Add export. Proceed if I didn't name the format."
+    },
+    {
+      "id": "ask",
+      "code": "/ask",
+      "group": "control",
+      "meaning": "Ask the single question that unblocks you, then stop.",
+      "when": "You are actually blocked, not merely missing a preference.",
+      "avoid": "Don't ask a stack of questions. Don't keep working past the block.",
+      "steps": [
+        "Ask one question.",
+        "Offer two to four concrete options.",
+        "Stop."
+      ],
+      "example": "Ask before you pick a database. I haven't decided."
+    },
+    {
+      "id": "status",
+      "code": "/status",
+      "group": "control",
+      "meaning": "Report done, in progress, blocked, and the next step.",
+      "when": "You want a snapshot, not more work.",
+      "avoid": "Don't teach. Don't start the next step.",
+      "steps": [
+        "Use four labels: done, in progress, blocked, next.",
+        "One to three lines under each, or 'none.'"
+      ],
+      "example": "Status on the filter work."
+    },
+    {
+      "id": "stop",
+      "code": "/stop",
+      "group": "control",
+      "meaning": "Stop this approach. Say what changed and what you did not verify.",
+      "when": "The current attempt is wrong and you don't want it stacked on.",
+      "avoid": "Don't keep patching the failed approach.",
+      "steps": [
+        "Stop.",
+        "Say what already changed.",
+        "Say what is unverified.",
+        "Wait for direction."
+      ],
+      "example": "Stop. The animation approach is wrong."
+    },
+    {
+      "id": "constraints",
+      "code": "/constraints",
+      "group": "control",
+      "meaning": "The lines under this command outrank your defaults.",
+      "when": "You have rules that should beat helpful extras.",
+      "avoid": "Don't 'improve' past a constraint.",
+      "steps": [
+        "Read the constraints under this command as binding.",
+        "If one conflicts with a habit of yours, follow the constraint.",
+        "If two constraints conflict, say so and stop."
+      ],
+      "example": "Constraints:\nKeep the lime accent.\nNo new dependencies.\nNo accounts."
+    },
+    {
+      "id": "quiet",
+      "code": "/quiet",
+      "group": "control",
+      "meaning": "Use the fewest words that are still complete.",
+      "when": "You want the answer, not a tour of the reasoning.",
+      "avoid": "Don't drop the result, the decision, or a real blocker just to be short.",
+      "steps": [
+        "Lead with the answer.",
+        "Cut preamble and recap.",
+        "Keep the one detail that would be dangerous to omit."
+      ],
+      "example": "Quiet. What file owns the search ranking?"
+    },
+    {
+      "id": "show",
+      "code": "/show",
+      "group": "control",
+      "meaning": "Lead with the thing the user can use.",
+      "when": "The user wants the result, not how the tools were used.",
+      "avoid": "Don't narrate plumbing, ports, or internal steps unless asked.",
+      "steps": [
+        "Put the usable result first.",
+        "Then the one next action, if there is one."
+      ],
+      "example": "Show me the empty state you wrote."
+    },
+    {
+      "id": "checkpoint",
+      "code": "/checkpoint",
+      "group": "control",
+      "meaning": "Pause after this step and show the result before continuing.",
+      "when": "You want to approve a step before the rest happens.",
+      "avoid": "Don't run ahead after the checkpoint.",
+      "steps": [
+        "Do only the step in front of you.",
+        "Show the result.",
+        "Wait."
+      ],
+      "example": "Checkpoint after the data shape, before any UI."
+    },
+    {
+      "id": "codemap",
+      "code": "/codemap",
+      "group": "read",
+      "meaning": "Map only the parts of the system this task touches.",
+      "when": "You don't know where the behavior lives yet.",
+      "avoid": "Don't tour unrelated trees. Don't propose a rewrite in the map.",
+      "steps": [
+        "Name the entry points.",
+        "Follow the data from input to the screen or response.",
+        "List the files that matter, each with why."
+      ],
+      "example": "Codemap the path from search box to the filtered list."
+    },
+    {
+      "id": "find",
+      "code": "/find",
+      "group": "read",
+      "meaning": "Find every place that owns this behavior.",
+      "when": "You need the call sites, not a folder.",
+      "avoid": "Don't list files that only mention the word.",
+      "steps": [
+        "Name the file and the symbol.",
+        "Say whether it is the owner or a caller.",
+        "Stop when the set is complete."
+      ],
+      "example": "Find what decides the star is filled."
+    },
+    {
+      "id": "trace",
+      "code": "/trace",
+      "group": "read",
+      "meaning": "Walk the execution path and name where state goes wrong.",
+      "when": "Something behaves oddly and you want the path, not a fix yet.",
+      "avoid": "Don't fix it in this pass unless a later command says so.",
+      "steps": [
+        "Start at the trigger.",
+        "Name each hop.",
+        "Mark the hop where the result diverges from what should happen."
+      ],
+      "example": "Trace what happens when the query is cleared."
+    },
+    {
+      "id": "explaincode",
+      "code": "/explaincode",
+      "group": "read",
+      "meaning": "Explain what the code is doing, in plain language.",
+      "when": "You want to understand a piece before changing it.",
+      "avoid": "Don't narrate line by line. Don't suggest a rewrite unless asked.",
+      "steps": [
+        "Say what it does.",
+        "Say why it is shaped this way, if the code shows that.",
+        "Name the trap a caller could hit."
+      ],
+      "example": "Explaincode the rank function."
+    },
+    {
+      "id": "contracts",
+      "code": "/contracts",
+      "group": "read",
+      "meaning": "List the invariants this code must keep.",
+      "when": "You are about to change something that has silent rules.",
+      "avoid": "Don't invent rules the code doesn't honor. Mark guesses.",
+      "steps": [
+        "List invariants.",
+        "Mark which ones have a test.",
+        "Mark which ones are only implied."
+      ],
+      "example": "Contracts for the brief stack. It caps at six."
+    },
+    {
+      "id": "deps",
+      "code": "/deps",
+      "group": "read",
+      "meaning": "Name what this change depends on, and what breaks if those move.",
+      "when": "You want the coupling before you edit.",
+      "avoid": "Don't propose replacing the dependency unless asked.",
+      "steps": [
+        "Name the upstream pieces.",
+        "Name the callers and screens that feel a break.",
+        "Keep it to this change."
+      ],
+      "example": "Deps if I change the command id format."
+    },
+    {
+      "id": "diff",
+      "code": "/diff",
+      "group": "read",
+      "meaning": "Explain what a change does and why it matters.",
+      "when": "You have a diff and want it in plain language.",
+      "avoid": "Don't review yet unless asked. Don't restate every line.",
+      "steps": [
+        "Say what the user can do now that they couldn't.",
+        "Say what behavior stayed the same.",
+        "Name anything the diff claims that it does not do."
+      ],
+      "example": "Diff the uncommitted work."
+    },
+    {
+      "id": "blast",
+      "code": "/blast",
+      "group": "read",
+      "meaning": "Name the blast radius of this change.",
+      "when": "The edit looks small and you want to know what else moves.",
+      "avoid": "Don't inflate it into a rewrite proposal.",
+      "steps": [
+        "List callers, stored data, and UI that can change behavior.",
+        "Mark the ones you will recheck."
+      ],
+      "example": "Blast if the star key in local storage changes."
+    },
+    {
+      "id": "implement",
+      "code": "/implement",
+      "group": "build",
+      "meaning": "Build the agreed behavior in the style of this codebase.",
+      "when": "The behavior is decided and you want it built.",
+      "avoid": "Don't redesign the surrounding product. Don't leave it unwired.",
+      "steps": [
+        "Match the existing patterns.",
+        "Wire it into the real entry, not a side demo.",
+        "Include the states the screen actually has.",
+        "Leave it runnable."
+      ],
+      "example": "Implement the brief composer we specced."
+    },
+    {
+      "id": "scaffold",
+      "code": "/scaffold",
+      "group": "build",
+      "meaning": "Add only the files this feature needs, and wire them in.",
+      "when": "You are starting a feature that doesn't have a home yet.",
+      "avoid": "Don't generate a parallel app inside the app.",
+      "steps": [
+        "Create the smallest set of files.",
+        "Register them where the app already routes or renders.",
+        "Use the existing tokens and types."
+      ],
+      "example": "Scaffold a detail sheet for one command."
+    },
+    {
+      "id": "wire",
+      "code": "/wire",
+      "group": "build",
+      "meaning": "Connect the pieces that already exist.",
+      "when": "The parts are built and the link between them is missing.",
+      "avoid": "Don't redesign the pieces while connecting them.",
+      "steps": [
+        "Find the two sides.",
+        "Connect them with the data they already speak.",
+        "Prove the path with one real case."
+      ],
+      "example": "Wire Saved so it shows starred commands from this book."
+    },
+    {
+      "id": "state",
+      "code": "/state",
+      "group": "build",
+      "meaning": "Add state using the pattern this app already uses.",
+      "when": "The interaction needs memory the UI doesn't have.",
+      "avoid": "Don't add a new state library. Don't lift state higher than it needs to go.",
+      "steps": [
+        "Use the existing store or component state.",
+        "Persist only if the behavior is supposed to survive reload.",
+        "Define the empty value."
+      ],
+      "example": "State for the brief, capped at six command ids."
+    },
+    {
+      "id": "api",
+      "code": "/api",
+      "group": "build",
+      "meaning": "Design a small, consistent interface for the task.",
+      "when": "You need a function, route, or component API.",
+      "avoid": "Don't add options for imaginary callers. Don't return fake success.",
+      "steps": [
+        "Name the inputs and outputs.",
+        "Validate at the boundary.",
+        "Match the style of the neighboring interface."
+      ],
+      "example": "API for copying either one command or a whole brief."
+    },
+    {
+      "id": "migrate",
+      "code": "/migrate",
+      "group": "build",
+      "meaning": "Change the data shape without destroying what's already stored.",
+      "when": "Saved data on device or in a table has to move.",
+      "avoid": "Don't wipe storage unless the task says to.",
+      "steps": [
+        "Read the old shape.",
+        "Accept both shapes, or migrate on read.",
+        "Say what happens to data you can't read."
+      ],
+      "example": "Migrate starred ids if the command slug changes."
+    },
+    {
+      "id": "types",
+      "code": "/types",
+      "group": "build",
+      "meaning": "Add or tighten types without changing behavior.",
+      "when": "The types are lying or too loose.",
+      "avoid": "Don't cast away an error you don't understand. Don't change runtime behavior.",
+      "steps": [
+        "Make the type match what the code actually does.",
+        "Fix errors at the source.",
+        "Leave behavior alone."
+      ],
+      "example": "Types for the group id on a command."
+    },
+    {
+      "id": "naming",
+      "code": "/naming",
+      "group": "build",
+      "meaning": "Propose clearer names for unclear symbols.",
+      "when": "A name is hiding what the thing does.",
+      "avoid": "Don't rename the world. Don't pick cute names.",
+      "steps": [
+        "Propose the name.",
+        "Say what it emphasizes.",
+        "Rename only the symbols in this task if the task says to apply it."
+      ],
+      "example": "Naming for the function that builds the paste text."
+    },
+    {
+      "id": "empty",
+      "code": "/empty",
+      "group": "build",
+      "meaning": "Include the empty, loading, and error states.",
+      "when": "A screen only handles the happy path.",
+      "avoid": "Don't leave a blank while data is missing. Don't use a joke as the error.",
+      "steps": [
+        "Say what the user sees when there is nothing.",
+        "Say what they see while it loads, if loading is real.",
+        "Say what they can do when it fails."
+      ],
+      "example": "Empty states for search with no hits."
+    },
+    {
+      "id": "pattern",
+      "code": "/pattern",
+      "group": "build",
+      "meaning": "Find the closest existing pattern and follow it.",
+      "when": "You want the new UI to feel like the rest of the app.",
+      "avoid": "Don't introduce a second visual language.",
+      "steps": [
+        "Name the file you are matching.",
+        "Follow its structure, type, and spacing.",
+        "Differ only where the new behavior requires it."
+      ],
+      "example": "Pattern the new list on the existing code list."
+    },
+    {
+      "id": "integrate",
+      "code": "/integrate",
+      "group": "build",
+      "meaning": "Merge parallel work into one coherent app.",
+      "when": "Two changes grew separately and need to become one.",
+      "avoid": "Don't average conflicting designs. Pick the one that fits the app.",
+      "steps": [
+        "Find the conflicts.",
+        "Resolve them.",
+        "Check the joined path still works."
+      ],
+      "example": "Integrate the command book with the picture book navigation."
+    },
+    {
+      "id": "flags",
+      "code": "/flags",
+      "group": "build",
+      "meaning": "If a behavior must be optional, default it to today's behavior.",
+      "when": "You are adding something people should be able to ignore.",
+      "avoid": "Don't turn the flag on by default if that changes current users.",
+      "steps": [
+        "Default to the current behavior.",
+        "Name the switch.",
+        "Keep the off path unchanged."
+      ],
+      "example": "Flags for showing examples on the list rows. Off by default."
+    },
+    {
+      "id": "refactor",
+      "code": "/refactor",
+      "group": "build",
+      "meaning": "Restructure the code without changing behavior.",
+      "when": "The structure is blocking the task, and behavior must stay.",
+      "avoid": "Don't mix a refactor with a feature. Don't 'improve' behavior along the way.",
+      "steps": [
+        "State the behavior that must stay.",
+        "Restructure.",
+        "Check the behavior is the same."
+      ],
+      "example": "Refactor the sheet so both books can use it. Same look."
+    },
+    {
+      "id": "simplifycode",
+      "code": "/simplifycode",
+      "group": "build",
+      "meaning": "Reduce branching and indirection while keeping behavior.",
+      "when": "The code is harder to follow than the job it does.",
+      "avoid": "Don't remove a branch that handles a real case.",
+      "steps": [
+        "Name the behavior to keep.",
+        "Remove a layer only if no caller needs it.",
+        "Show the simpler path."
+      ],
+      "example": "Simplifycode the filter logic."
+    },
+    {
+      "id": "debug",
+      "code": "/debug",
+      "group": "repair",
+      "meaning": "Find the likely bug. Name the cause, then fix the cause.",
+      "when": "Something fails and you want it actually fixed.",
+      "avoid": "Don't patch the symptom. Don't clean unrelated code.",
+      "steps": [
+        "Reproduce it with the smallest case.",
+        "Name the cause in one sentence.",
+        "Fix that cause.",
+        "Show the check that now passes."
+      ],
+      "example": "The save button stays disabled after the form is valid."
+    },
+    {
+      "id": "repro",
+      "code": "/repro",
+      "group": "repair",
+      "meaning": "Turn a bug report into the smallest steps that reproduce it.",
+      "when": "You have a vague report and need a recipe.",
+      "avoid": "Don't fix it yet if this command is alone.",
+      "steps": [
+        "Write the shortest steps.",
+        "State what you expect and what happens.",
+        "Cut any step that isn't needed to show the bug."
+      ],
+      "example": "People say search sometimes shows picture codes inside the agent book."
+    },
+    {
+      "id": "edgecases",
+      "code": "/edgecases",
+      "group": "repair",
+      "meaning": "List the inputs most likely to break this.",
+      "when": "You want the cases before or after a fix.",
+      "avoid": "Don't list theoretical cases that this code cannot receive.",
+      "steps": [
+        "List the cases that can actually happen here.",
+        "Say the expected result for each.",
+        "Mark the ones that fail today, if you know."
+      ],
+      "example": "Edgecases for the brief when it is full."
+    },
+    {
+      "id": "bisect",
+      "code": "/bisect",
+      "group": "repair",
+      "meaning": "Narrow it to the smallest case that still fails.",
+      "when": "The failure is real but the area is large.",
+      "avoid": "Don't speculate a cause before the case is small.",
+      "steps": [
+        "Find the last known good behavior, if you can.",
+        "Shrink the input until removing anything makes the bug vanish.",
+        "Then name the suspect."
+      ],
+      "example": "Bisect why copying fails only on the phone preview."
+    },
+    {
+      "id": "fix",
+      "code": "/fix",
+      "group": "repair",
+      "meaning": "Apply the fix. Keep the diff to the bug.",
+      "when": "The cause is known.",
+      "avoid": "Don't bundle a refactor. Don't claim it's fixed without a check.",
+      "steps": [
+        "Change only what the cause requires.",
+        "Keep a check that fails before and passes after, when a check is possible."
+      ],
+      "example": "Fix the off-by-one when the sixth command is added."
+    },
+    {
+      "id": "tests",
+      "code": "/tests",
+      "group": "repair",
+      "meaning": "Write tests for the important paths and the edge cases.",
+      "when": "Behavior needs a lock so it doesn't regress.",
+      "avoid": "Don't test the framework. Don't assert copy you expect to keep changing, unless the copy is the contract.",
+      "steps": [
+        "Cover the main path.",
+        "Cover the edge case that broke or is likely to.",
+        "Run the tests."
+      ],
+      "example": "Tests for ranking an exact code match above a substring."
+    },
+    {
+      "id": "regress",
+      "code": "/regress",
+      "group": "repair",
+      "meaning": "Check the neighbors this change could have broken.",
+      "when": "A fix landed and nearby behavior might have moved.",
+      "avoid": "Don't expand into a full rewrite of the neighbors.",
+      "steps": [
+        "List the neighboring behaviors.",
+        "Check each one.",
+        "Report pass or fail."
+      ],
+      "example": "Regress starring and the picture book after the nav change."
+    },
+    {
+      "id": "review",
+      "code": "/review",
+      "group": "repair",
+      "meaning": "Review the code for bugs, risks, and concrete fixes.",
+      "when": "You want a picky pass, not more features.",
+      "avoid": "Don't nitpick taste. Don't rewrite the feature in the review.",
+      "steps": [
+        "Look for correctness, security, and missing states.",
+        "Cite the place.",
+        "Say the fix in one sentence.",
+        "Block only on those. Mention nits separately."
+      ],
+      "example": "Review the brief assembler."
+    },
+    {
+      "id": "security",
+      "code": "/security",
+      "group": "repair",
+      "meaning": "Review for injection, auth gaps, and data exposure.",
+      "when": "The change takes input, stores data, or crosses a trust boundary.",
+      "avoid": "Don't wave it through because it 'looks internal.'",
+      "steps": [
+        "Check input handling, auth, and secrets.",
+        "Cite the line if something is wrong.",
+        "Say 'nothing in this change' if that's the truth."
+      ],
+      "example": "Security on the task text that gets pasted into the brief."
+    },
+    {
+      "id": "logs",
+      "code": "/logs",
+      "group": "repair",
+      "meaning": "Read the failure and quote the first real error.",
+      "when": "There is a stack trace or a long log.",
+      "avoid": "Don't anchor on the last line if it's fallout.",
+      "steps": [
+        "Quote the first error that is a cause.",
+        "Say what it means.",
+        "Ignore trailing noise unless it changes the cause."
+      ],
+      "example": "Logs from the failed build. Quote the real error."
+    },
+    {
+      "id": "flaky",
+      "code": "/flaky",
+      "group": "repair",
+      "meaning": "Explain the intermittence, then fix that.",
+      "when": "It fails sometimes.",
+      "avoid": "Don't add a sleep and call it fixed.",
+      "steps": [
+        "Say whether it is order, time, shared state, or a real race.",
+        "Fix that cause.",
+        "Say how you'll know it stayed fixed."
+      ],
+      "example": "Flaky: the sheet sometimes opens the previous command."
+    },
+    {
+      "id": "undo",
+      "code": "/undo",
+      "group": "repair",
+      "meaning": "Back out the failed approach before trying the next one.",
+      "when": "An attempt made things worse.",
+      "avoid": "Don't stack the next idea on the failed one.",
+      "steps": [
+        "Remove the failed change.",
+        "Confirm the previous behavior is back.",
+        "Then try the next approach, if one was asked for."
+      ],
+      "example": "Undo the virtualized list. It broke tap targets."
+    },
+    {
+      "id": "optimize",
+      "code": "/optimize",
+      "group": "repair",
+      "meaning": "Improve the hot path. Leave the rest alone.",
+      "when": "Something is actually slow.",
+      "avoid": "Don't micro-optimize cold code. Don't change behavior.",
+      "steps": [
+        "Name the hot path.",
+        "Change that.",
+        "Say how you know it is cheaper."
+      ],
+      "example": "Optimize filtering when the query changes. The list is long."
+    },
+    {
+      "id": "verify",
+      "code": "/verify",
+      "group": "ship",
+      "meaning": "Run the checks that prove this works. Report pass or fail.",
+      "when": "You want evidence, not a feeling.",
+      "avoid": "Don't say it works if you didn't run the check.",
+      "steps": [
+        "Run the relevant checks.",
+        "Report pass or fail with the signal.",
+        "If something wasn't run, say so."
+      ],
+      "example": "Verify search, starring, and copying a brief."
+    },
+    {
+      "id": "preview",
+      "code": "/preview",
+      "group": "ship",
+      "meaning": "Confirm the screen shows real content on a phone width and a laptop width.",
+      "when": "UI changed and you need to know it actually rendered.",
+      "avoid": "Don't trust a successful request alone. Don't ignore the console.",
+      "steps": [
+        "Look at a narrow phone width and a laptop width.",
+        "Confirm real text is visible.",
+        "Confirm the console has no uncaught errors."
+      ],
+      "example": "Preview the command list."
+    },
+    {
+      "id": "a11y",
+      "code": "/a11y",
+      "group": "ship",
+      "meaning": "Check names, keyboard, focus, and contrast for what you changed.",
+      "when": "The change has controls, especially icon buttons.",
+      "avoid": "Don't boil the ocean outside this change.",
+      "steps": [
+        "Every icon button has a name.",
+        "Focus is visible.",
+        "The path works on keyboard.",
+        "Text contrast holds."
+      ],
+      "example": "A11y on the add-to-brief buttons."
+    },
+    {
+      "id": "mobile",
+      "code": "/mobile",
+      "group": "ship",
+      "meaning": "At a phone width: no sideways scroll, no overlap, targets you can tap.",
+      "when": "Someone will use this on a phone.",
+      "avoid": "Don't shrink text below a readable size to force a fit.",
+      "steps": [
+        "Check around 390 pixels wide.",
+        "No horizontal overflow.",
+        "Tap targets at least 44 pixels.",
+        "The primary action stays reachable."
+      ],
+      "example": "Mobile on the command list and the brief bar."
+    },
+    {
+      "id": "perf",
+      "code": "/perf",
+      "group": "ship",
+      "meaning": "Name the one cost that matters here.",
+      "when": "You suspect the screen or the query is heavy.",
+      "avoid": "Don't optimize anything except that cost.",
+      "steps": [
+        "Name the cost.",
+        "Say whether it matters at the size this product actually has.",
+        "Change it only if it does."
+      ],
+      "example": "Perf of rendering the full command list."
+    },
+    {
+      "id": "changelog",
+      "code": "/changelog",
+      "group": "ship",
+      "meaning": "Write what changed and what to try, in the user's words.",
+      "when": "You need a note a person can act on.",
+      "avoid": "Don't mention internal file names unless the user works in the repo.",
+      "steps": [
+        "Say what changed.",
+        "Say what to try.",
+        "Say a limit if there is one."
+      ],
+      "example": "Changelog for the agent command book."
+    },
+    {
+      "id": "handoff",
+      "code": "/handoff",
+      "group": "ship",
+      "meaning": "Note how to run it, what is fragile, and what is not done.",
+      "when": "Someone else will pick this up, including future you.",
+      "avoid": "Don't write a manual. Don't hide a known gap.",
+      "steps": [
+        "How to try the change.",
+        "What is fragile.",
+        "What is not done."
+      ],
+      "example": "Handoff on the command book."
+    },
+    {
+      "id": "done",
+      "code": "/done",
+      "group": "ship",
+      "meaning": "Check the work against the done-condition. List any gap.",
+      "when": "You are about to call it finished.",
+      "avoid": "Don't call it done with a known gap buried in the middle.",
+      "steps": [
+        "Restate the done-condition.",
+        "Mark each part met or not.",
+        "List gaps before you say finished."
+      ],
+      "example": "Done check for 'a full list of agent commands I can copy.'"
+    },
+    {
+      "id": "docs",
+      "code": "/docs",
+      "group": "ship",
+      "meaning": "Add concise documentation for the public surface.",
+      "when": "A behavior is now part of how people use the product.",
+      "avoid": "Don't document internals. Don't drift from what the UI actually does.",
+      "steps": [
+        "Document the surface a user touches.",
+        "Keep it shorter than the feature.",
+        "Match the real labels."
+      ],
+      "example": "Docs: how to build a brief and copy it."
+    },
+    {
+      "id": "research",
+      "code": "/research",
+      "group": "research",
+      "meaning": "Look it up. Separate what you found from what you inferred.",
+      "when": "The answer depends on facts you shouldn't invent.",
+      "avoid": "Don't present memory as a current source. Don't skip the link.",
+      "steps": [
+        "Find current sources.",
+        "Label found versus inferred.",
+        "Put the source next to the claim."
+      ],
+      "example": "Research the current limit on brief length for this kind of prompt."
+    },
+    {
+      "id": "factcheck",
+      "code": "/factcheck",
+      "group": "research",
+      "meaning": "Check factual claims and flag what could not be verified.",
+      "when": "A draft contains facts that might be wrong.",
+      "avoid": "Don't silently rewrite a claim you couldn't check. Flag it.",
+      "steps": [
+        "List claims.",
+        "Mark verified, contradicted, or unverified.",
+        "Cite the check."
+      ],
+      "example": "Factcheck the sources paragraph in the picture book."
+    },
+    {
+      "id": "latest",
+      "code": "/latest",
+      "group": "research",
+      "meaning": "Use current documentation. Say the version or the date.",
+      "when": "An API or product changes and memory may be stale.",
+      "avoid": "Don't answer from an old major version if the project is on a newer one.",
+      "steps": [
+        "Read the docs that match the version in this project.",
+        "Say the version or date you used."
+      ],
+      "example": "Latest on how file routes are defined in this repo."
+    },
+    {
+      "id": "glossary",
+      "code": "/glossary",
+      "group": "research",
+      "meaning": "Define the terms as this project uses them.",
+      "when": "Words like brief, code, and stack are overloaded.",
+      "avoid": "Don't substitute dictionary definitions for the product's.",
+      "steps": [
+        "List the terms.",
+        "Define each as this product uses it.",
+        "Note a collision if the same word means two things here."
+      ],
+      "example": "Glossary for code, command, brief, and stack."
+    },
+    {
+      "id": "scan",
+      "code": "/scan",
+      "group": "research",
+      "meaning": "Survey the options quickly. Go deep on the two that fit.",
+      "when": "You want a landscape, not a treatise.",
+      "avoid": "Don't give equal depth to options that are a bad fit.",
+      "steps": [
+        "List the real options in a few lines each.",
+        "Pick the two that fit.",
+        "Go one level deeper on those."
+      ],
+      "example": "Scan ways to persist a brief on this device only."
+    },
+    {
+      "id": "systemmap",
+      "code": "/systemmap",
+      "group": "research",
+      "meaning": "Map the actors, forces, and relationships.",
+      "when": "The question is about a system, not a single function.",
+      "avoid": "Don't turn it into an org chart of code files. That's codemap.",
+      "steps": [
+        "Name the actors.",
+        "Name what each one wants.",
+        "Name the links that matter."
+      ],
+      "example": "Systemmap for a student, an examiner, and a drill."
+    },
+    {
+      "id": "reverseengineer",
+      "code": "/reverseengineer",
+      "group": "research",
+      "meaning": "Work backward from the result to how it is produced.",
+      "when": "You can see the outcome and need the mechanism.",
+      "avoid": "Don't invent steps you didn't find.",
+      "steps": [
+        "Start from the visible result.",
+        "Step backward to the cause.",
+        "Mark any hop you could not confirm."
+      ],
+      "example": "Reverseengineer how a starred command survives reload."
+    },
+    {
+      "id": "spec",
+      "code": "/spec",
+      "group": "write",
+      "meaning": "Write the spec: who it's for, the job, done-when, and out of scope.",
+      "when": "The work needs a contract before building.",
+      "avoid": "Don't include implementation trivia. Don't leave done-when as a vibe.",
+      "steps": [
+        "Who it's for.",
+        "The job.",
+        "Done when.",
+        "Out of scope.",
+        "The edge cases that matter."
+      ],
+      "example": "Spec a full command list for my agent."
+    },
+    {
+      "id": "rewrite",
+      "code": "/rewrite",
+      "group": "write",
+      "meaning": "Rephrase the text I give you. Keep the meaning.",
+      "when": "The words are close but the wording is wrong.",
+      "avoid": "Don't add claims, features, or a new tone I didn't ask for.",
+      "steps": [
+        "Keep every fact.",
+        "Change the wording.",
+        "Don't add a closer or a moral."
+      ],
+      "example": "Rewrite: 'This is a list of commands you can paste.'"
+    },
+    {
+      "id": "shorten",
+      "code": "/shorten",
+      "group": "write",
+      "meaning": "Condense it. Same facts.",
+      "when": "It's too long for the place it sits.",
+      "avoid": "Don't drop a number, a name, or a constraint to make it shorter.",
+      "steps": [
+        "Cut about a third, more if it's fluffy.",
+        "Keep the facts.",
+        "Keep the action."
+      ],
+      "example": "Shorten the group blurbs."
+    },
+    {
+      "id": "simplify",
+      "code": "/simplify",
+      "group": "write",
+      "meaning": "Make it easier to understand, in plainer language.",
+      "when": "A smart non-expert has to act on it.",
+      "avoid": "Don't talk down. Don't remove the precise term if the plain word is wrong.",
+      "steps": [
+        "Prefer plain words.",
+        "Keep the term where precision matters, and define it once."
+      ],
+      "example": "Simplify the paragraph about briefs."
+    },
+    {
+      "id": "human",
+      "code": "/human",
+      "group": "write",
+      "meaning": "Rewrite so it sounds natural, not like a template.",
+      "when": "The text sounds generated.",
+      "avoid": "Don't add slang, jokes, or fake warmth.",
+      "steps": [
+        "Use sentences a person would say.",
+        "Cut stock transitions.",
+        "Keep the meaning."
+      ],
+      "example": "Human the empty-state line."
+    },
+    {
+      "id": "formal",
+      "code": "/formal",
+      "group": "write",
+      "meaning": "Change the tone to professional.",
+      "when": "The text will be seen in a formal place.",
+      "avoid": "Don't make it stiff. Don't add legalese it doesn't need.",
+      "steps": [
+        "Professional, plain, specific.",
+        "No slang.",
+        "Same facts."
+      ],
+      "example": "Formal the handoff note."
+    },
+    {
+      "id": "commit-msg",
+      "code": "/commit-msg",
+      "group": "write",
+      "meaning": "Propose a commit message from the change. Don't commit unless asked.",
+      "when": "You want the message, not the commit.",
+      "avoid": "Don't commit or push. Don't mention files that didn't change.",
+      "steps": [
+        "Subject line: what changed.",
+        "Body: why, if why isn't obvious.",
+        "Stop before running git commit."
+      ],
+      "example": "Commit-msg for the agent command book."
+    },
+    {
+      "id": "pr",
+      "code": "/pr",
+      "group": "write",
+      "meaning": "Write the description: what, why, how to test, risk.",
+      "when": "The change needs a review note.",
+      "avoid": "Don't market it. Don't hide a risk.",
+      "steps": [
+        "What.",
+        "Why.",
+        "How to test.",
+        "Risk."
+      ],
+      "example": "PR text for adding the command book."
+    },
+    {
+      "id": "error-copy",
+      "code": "/error-copy",
+      "group": "write",
+      "meaning": "Write the message a person should see: what happened, and the next action.",
+      "when": "An error is currently a code or a blank.",
+      "avoid": "Don't show a stack trace. Don't be cute.",
+      "steps": [
+        "Say what happened.",
+        "Say the next action.",
+        "Don't blame the person."
+      ],
+      "example": "Error-copy when copying to the clipboard fails."
+    },
+    {
+      "id": "skeleton",
+      "code": "/skeleton",
+      "group": "write",
+      "meaning": "Outline only. A heading and one line under each.",
+      "when": "You want structure before prose.",
+      "avoid": "Don't draft the full piece.",
+      "steps": [
+        "Headings in order.",
+        "One sentence under each.",
+        "Stop."
+      ],
+      "example": "Skeleton for a practical-exam study sheet."
+    },
+    {
+      "id": "bullets",
+      "code": "/bullets",
+      "group": "write",
+      "meaning": "Turn the output into bullet points.",
+      "when": "A list will be scanned, not read as prose.",
+      "avoid": "Don't use a bullet for a single sentence that should stay prose.",
+      "steps": [
+        "One idea per bullet.",
+        "Parallel grammar.",
+        "No nested bullets unless the nesting is real."
+      ],
+      "example": "Bullets for how to use this book."
+    },
+    {
+      "id": "tldr",
+      "code": "/tldr",
+      "group": "write",
+      "meaning": "Give the shortest useful summary.",
+      "when": "Someone needs the point before the detail.",
+      "avoid": "Don't omit the caveat that changes the action.",
+      "steps": [
+        "One to three sentences.",
+        "The action, if there is one.",
+        "The caveat, if skipping it would mislead."
+      ],
+      "example": "Tldr what this command book is for."
+    },
+    {
+      "id": "checklist",
+      "code": "/checklist",
+      "group": "write",
+      "meaning": "Turn this into a checklist. One action per line.",
+      "when": "A person is about to do the steps, not read about them.",
+      "avoid": "Don't combine two actions on one line.",
+      "steps": [
+        "One action per line.",
+        "Start with a verb.",
+        "Order them the way the work happens."
+      ],
+      "example": "Checklist for shipping a small UI change."
+    },
+    {
+      "id": "ui",
+      "code": "/ui",
+      "group": "design",
+      "meaning": "Design the screen as a product: hierarchy, one primary action, real states.",
+      "when": "A screen is new or feels like a wireframe.",
+      "avoid": "Don't add a second accent. Don't decorate.",
+      "steps": [
+        "One primary action.",
+        "Hierarchy through size, weight, and color.",
+        "Empty, busy, and error states if those exist."
+      ],
+      "example": "UI for the command list on a phone."
+    },
+    {
+      "id": "tokens",
+      "code": "/tokens",
+      "group": "design",
+      "meaning": "Use the existing color, type, and spacing.",
+      "when": "A new surface is drifting from the product.",
+      "avoid": "Don't invent a palette. Don't add a new font.",
+      "steps": [
+        "Use the tokens already defined.",
+        "If a value is missing, add a token. Don't sprinkle a one-off."
+      ],
+      "example": "Tokens only. No new colors for the agent book."
+    },
+    {
+      "id": "layout",
+      "code": "/layout",
+      "group": "design",
+      "meaning": "Set the regions, what is primary, and what collapses on a phone.",
+      "when": "The desktop layout doesn't have a phone plan.",
+      "avoid": "Don't hide the primary action below a long rail on a phone.",
+      "steps": [
+        "Name the regions.",
+        "Say what stacks on a narrow screen.",
+        "Keep the primary action reachable."
+      ],
+      "example": "Layout: groups as a rail on a laptop, chips on a phone."
+    },
+    {
+      "id": "motion",
+      "code": "/motion",
+      "group": "design",
+      "meaning": "Say what moves, how far, and how long. Honor reduced motion.",
+      "when": "Something animates, or you're about to add motion.",
+      "avoid": "Don't animate layout. Don't bounce.",
+      "steps": [
+        "What moves.",
+        "Opacity and transform only, unless there's a reason.",
+        "Reduced motion gets an instant or opacity-only change."
+      ],
+      "example": "Motion for the detail sheet."
+    },
+    {
+      "id": "critique",
+      "code": "/critique",
+      "group": "design",
+      "meaning": "Review the work and point out what needs improvement.",
+      "when": "You want a critique of a screen or a flow.",
+      "avoid": "Don't restyle it in the critique. Name the smallest fix.",
+      "steps": [
+        "Hierarchy, contrast, overflow, dead ends.",
+        "The smallest fix for each real problem.",
+        "Leave taste comments out unless they block use."
+      ],
+      "example": "Critique the command list."
+    },
+    {
+      "id": "brand",
+      "code": "/brand",
+      "group": "design",
+      "meaning": "Hold the name, palette, and type. Don't restyle the product in passing.",
+      "when": "A change is threatening to rebrand the app.",
+      "avoid": "Don't introduce a new logo, accent, or voice.",
+      "steps": [
+        "Keep the existing name and tokens.",
+        "Match the voice of the existing copy."
+      ],
+      "example": "Brand stays Cuebook. This is a second book, not a new product."
+    },
+    {
+      "id": "states",
+      "code": "/states",
+      "group": "design",
+      "meaning": "List every state of this screen and what the person can do in each.",
+      "when": "A screen has more modes than the mock shows.",
+      "avoid": "Don't design only the full list.",
+      "steps": [
+        "Name each state.",
+        "Say what is on screen.",
+        "Say the actions available."
+      ],
+      "example": "States: all commands, one group, search, saved, empty, detail open, brief full."
+    },
+    {
+      "id": "og",
+      "code": "/og",
+      "group": "design",
+      "meaning": "Specify the share card: the sentence, the picture, and the card type.",
+      "when": "The link will be shared and needs a card.",
+      "avoid": "Don't promise a picture you don't have.",
+      "steps": [
+        "One sentence.",
+        "What the picture shows.",
+        "The card type."
+      ],
+      "example": "Og for Cuebook."
+    },
+    {
+      "id": "still",
+      "code": "/still",
+      "group": "picture",
+      "meaning": "Direct one still: subject, light, and what must stay recognizable.",
+      "when": "You want a single image direction, not a menu of moods.",
+      "avoid": "Don't add people, logos, or text you weren't given.",
+      "steps": [
+        "Name the subject.",
+        "Name the light and the lens feel.",
+        "Say what must not change."
+      ],
+      "example": "Still of the product on a wood table, north window, no extra props."
+    },
+    {
+      "id": "contact",
+      "code": "/contact",
+      "group": "picture",
+      "meaning": "Four distinct directions for the same subject, labeled, so one can be picked.",
+      "when": "You haven't chosen a direction yet.",
+      "avoid": "Don't produce four near-duplicates.",
+      "steps": [
+        "Four directions.",
+        "Label each.",
+        "Same subject in all four.",
+        "Say how they differ in one line."
+      ],
+      "example": "Contact sheet for a clinic hero. Same room, four lights."
+    },
+    {
+      "id": "edit-img",
+      "code": "/edit-img",
+      "group": "picture",
+      "meaning": "Change only what is specified in the uploaded image.",
+      "when": "An image exists and should be edited, not restaged.",
+      "avoid": "Don't change identity, pose, or background unless the instruction says so.",
+      "steps": [
+        "List the edits.",
+        "Leave everything else.",
+        "If an edit would require inventing a fact, skip it and say so."
+      ],
+      "example": "Edit-img: remove the outlet on the back wall. Leave the person alone."
+    },
+    {
+      "id": "clip",
+      "code": "/clip",
+      "group": "picture",
+      "meaning": "Direct one clip: start, action, end, camera. One motion.",
+      "when": "You want a short moving shot.",
+      "avoid": "Don't stack three ideas in one clip.",
+      "steps": [
+        "Start frame.",
+        "The action.",
+        "End frame.",
+        "Camera move, if any."
+      ],
+      "example": "Clip: the goniometer settles on the joint. One slow push-in. No text."
+    },
+    {
+      "id": "hero",
+      "code": "/hero",
+      "group": "picture",
+      "meaning": "A clean hero image with the subject as the focal point.",
+      "when": "You need a primary picture for a page or a card.",
+      "avoid": "Don't add a headline you weren't given. Don't crowd the subject.",
+      "steps": [
+        "Subject dominates.",
+        "Background stays quiet.",
+        "Leave clean space only if a line of type was provided."
+      ],
+      "example": "Hero of the instrument on a dark field. No slogan."
+    },
+    {
+      "id": "ugc",
+      "code": "/ugc",
+      "group": "picture",
+      "meaning": "A user-style photo or clip, as if someone is showing it to a friend.",
+      "when": "You want it to feel handheld, not like an ad.",
+      "avoid": "Don't polish it into a studio shot.",
+      "steps": [
+        "Handheld.",
+        "A real place.",
+        "Imperfect framing.",
+        "The product still readable."
+      ],
+      "example": "Ugc of the product on a kitchen counter, phone photo."
+    },
+    {
+      "id": "labels",
+      "code": "/labels",
+      "group": "picture",
+      "meaning": "Use only the labels and facts provided. Leave off anything else.",
+      "when": "The image needs words and the words must be true.",
+      "avoid": "Don't invent measurements, prices, or anatomy.",
+      "steps": [
+        "Use the supplied labels verbatim.",
+        "If a label wasn't supplied, don't add one.",
+        "Keep them short."
+      ],
+      "example": "Labels: only 'Knee flexion' and '120°'. Nothing else."
+    },
+    {
+      "id": "codes",
+      "code": "/codes",
+      "group": "picture",
+      "meaning": "Treat pasted picture-book tokens as shorthand. Follow each meaning.",
+      "when": "You are combining visual codes from the other book.",
+      "avoid": "They are not secret switches. Don't obey the token if you ignore the meaning.",
+      "steps": [
+        "Read each code's meaning.",
+        "Apply them together.",
+        "Keep the subject recognizable.",
+        "If a code wants a fact you don't have, omit it."
+      ],
+      "example": "Codes: /packshot and /northlight. Subject is the bottle I uploaded."
+    },
+    {
+      "id": "open",
+      "code": "/open",
+      "group": "browser",
+      "meaning": "Open the URL and report the title and the main content.",
+      "when": "You need to know what's on a page.",
+      "avoid": "Don't describe the browser chrome. Don't click yet.",
+      "steps": [
+        "Open the URL you were given.",
+        "Report the title.",
+        "Report the main content."
+      ],
+      "example": "Open the docs page I pasted."
+    },
+    {
+      "id": "extract",
+      "code": "/extract",
+      "group": "browser",
+      "meaning": "Extract the fields named. Mark a field missing rather than guessing.",
+      "when": "The page has facts you want pulled out.",
+      "avoid": "Don't fill a blank with a plausible value.",
+      "steps": [
+        "Extract only the named fields.",
+        "Keep the source order.",
+        "Write 'missing' when it isn't there."
+      ],
+      "example": "Extract name, date, and location from this page."
+    },
+    {
+      "id": "click-path",
+      "code": "/click-path",
+      "group": "browser",
+      "meaning": "Do these steps in order. After each one, say what you see.",
+      "when": "You have a known path through a site.",
+      "avoid": "Don't improvise if a step isn't on the page. Stop.",
+      "steps": [
+        "Do the steps in order.",
+        "After each step, one line on what you see.",
+        "Stop if the page disagrees with the step."
+      ],
+      "example": "Click-path: open the docs, then the API section, then authentication."
+    },
+    {
+      "id": "shot",
+      "code": "/shot",
+      "group": "browser",
+      "meaning": "Describe the screen that proves this step worked.",
+      "when": "You need evidence of a page state.",
+      "avoid": "Don't describe what you hoped to see. Describe what is there.",
+      "steps": [
+        "Say what is visible.",
+        "Say whether it matches the expected step."
+      ],
+      "example": "Shot after the form submits."
+    },
+    {
+      "id": "form",
+      "code": "/form",
+      "group": "browser",
+      "meaning": "Fill only the fields provided. Don't submit unless told.",
+      "when": "A form needs specific values.",
+      "avoid": "Don't invent a password, a card, or an address. Don't submit on your own.",
+      "steps": [
+        "Fill only the given fields.",
+        "Leave the rest untouched.",
+        "Stop before submit unless the task says submit."
+      ],
+      "example": "Form: email is the one I gave you. Don't submit."
+    },
+    {
+      "id": "watch",
+      "code": "/watch",
+      "group": "browser",
+      "meaning": "Wait until the condition named, or say it timed out.",
+      "when": "The page is changing and the next step depends on it.",
+      "avoid": "Don't click around while you wait.",
+      "steps": [
+        "Watch for the condition.",
+        "When it happens, say so.",
+        "If it doesn't, say it timed out and what you do see."
+      ],
+      "example": "Watch until the results table has more than one row."
+    },
+    {
+      "id": "session",
+      "code": "/session",
+      "group": "browser",
+      "meaning": "Stay in the current browser session. Don't open a second one.",
+      "when": "A session is already signed in or already on the right site.",
+      "avoid": "Don't launch a fresh profile.",
+      "steps": [
+        "Reuse the current session.",
+        "If you can't see it, say so. Don't start another."
+      ],
+      "example": "Session stays on the browser that's already open."
+    },
+    {
+      "id": "no-login",
+      "code": "/no-login",
+      "group": "browser",
+      "meaning": "Don't try to sign in. If a wall appears, stop and describe it.",
+      "when": "The page may ask for an account and you don't want one used.",
+      "avoid": "Don't type credentials. Don't click through a login with a guess.",
+      "steps": [
+        "If the content is public, read it.",
+        "If a sign-in wall appears, stop.",
+        "Describe the wall."
+      ],
+      "example": "No-login. Just read the public pricing page."
+    },
+    {
+      "id": "teachme",
+      "code": "/teachme",
+      "group": "study",
+      "meaning": "Teach it as a lesson: the idea, a concrete case, the usual mistake.",
+      "when": "You want to learn the thing, not just get an answer.",
+      "avoid": "Don't dump the whole chapter. Don't quiz yet unless another command says so.",
+      "steps": [
+        "The idea.",
+        "One concrete case.",
+        "The mistake people make."
+      ],
+      "example": "Teachme end feel versus a hard stop."
+    },
+    {
+      "id": "quizme",
+      "code": "/quizme",
+      "group": "study",
+      "meaning": "Ask one question. Wait for the answer. Then mark it.",
+      "when": "You want to be tested, not handed the list.",
+      "avoid": "Don't ask the next question in the same message. Don't give the answer before the attempt.",
+      "steps": [
+        "Ask one question.",
+        "Wait.",
+        "Mark it and say why.",
+        "Then stop."
+      ],
+      "example": "Quizme on goniometer alignment for knee flexion."
+    },
+    {
+      "id": "drill",
+      "code": "/drill",
+      "group": "study",
+      "meaning": "Set the station, ask for the step, then correct the performance.",
+      "when": "You want a practical rep, not a lecture.",
+      "avoid": "Don't demonstrate the whole skill and call it a drill.",
+      "steps": [
+        "Set the scene: position, landmarks, what you can see.",
+        "Ask for the next step.",
+        "Correct that step."
+      ],
+      "example": "Drill manual muscle test for hip abduction. I'm the student."
+    },
+    {
+      "id": "oral",
+      "code": "/oral",
+      "group": "study",
+      "meaning": "Play the examiner. One check-off question, then grade it against the standard.",
+      "when": "You want the pressure of a practical, including the grading.",
+      "avoid": "Don't soften a wrong answer into a pass. Don't ask three questions at once.",
+      "steps": [
+        "Ask one check-off question.",
+        "Wait for the answer.",
+        "Grade it: pass, borderline, or miss, with the standard you used."
+      ],
+      "example": "Oral me on ankle dorsiflexion. Examiner voice."
+    },
+    {
+      "id": "gaps",
+      "code": "/gaps",
+      "group": "study",
+      "meaning": "From what I show you, name the gaps. Don't pad.",
+      "when": "You want to know what is missing before a test.",
+      "avoid": "Don't reteach topics I already have cold.",
+      "steps": [
+        "Read what I already covered.",
+        "Name only the gaps.",
+        "Say which gap to close first."
+      ],
+      "example": "Gaps: I can landmark the knee but I rush the end feel."
+    },
+    {
+      "id": "mnemonic",
+      "code": "/mnemonic",
+      "group": "study",
+      "meaning": "One memory hook, tied to the real mechanism.",
+      "when": "A list won't stick and you want one hook.",
+      "avoid": "Don't use a cute story that isn't how the thing works.",
+      "steps": [
+        "One hook.",
+        "Tie it to the mechanism.",
+        "Say where the hook would mislead you if you trusted it too far."
+      ],
+      "example": "Mnemonic for the order of a MMT grade."
+    },
+    {
+      "id": "socratic",
+      "code": "/socratic",
+      "group": "study",
+      "meaning": "Teach by asking guided questions.",
+      "when": "You want to arrive at the idea, not be handed it.",
+      "avoid": "Don't ask a question you immediately answer.",
+      "steps": [
+        "Ask the question that unlocks the next step.",
+        "Wait.",
+        "Use the answer to choose the next question."
+      ],
+      "example": "Socratic through why the axis goes over the joint."
+    },
+    {
+      "id": "stepbystep",
+      "code": "/stepbystep",
+      "group": "study",
+      "meaning": "Force a sequential, ordered explanation.",
+      "when": "Order matters and a summary would hide it.",
+      "avoid": "Don't skip a step because it seems obvious.",
+      "steps": [
+        "Number the steps.",
+        "One action per step.",
+        "Name the check at the end of the sequence."
+      ],
+      "example": "Stepbystep for measuring ankle dorsiflexion."
+    },
+    {
+      "id": "misconceptions",
+      "code": "/misconceptions",
+      "group": "study",
+      "meaning": "List the common misunderstandings about this topic.",
+      "when": "You want the traps before you practice.",
+      "avoid": "Don't include straw men. These should be mistakes people actually make.",
+      "steps": [
+        "The misunderstanding.",
+        "What is true instead.",
+        "How you'd notice it in a practical."
+      ],
+      "example": "Misconceptions about end feel."
+    },
+    {
+      "id": "feynman",
+      "code": "/feynman",
+      "group": "study",
+      "meaning": "Explain it as simply as possible, to test whether it is actually understood.",
+      "when": "You want the simple version as a test of understanding.",
+      "avoid": "Don't hide behind jargon. Don't lose the mechanism.",
+      "steps": [
+        "Plain explanation.",
+        "The one place the plain version is incomplete."
+      ],
+      "example": "Feynman gait during stance."
+    },
+    {
+      "id": "alt3",
+      "code": "/alt3",
+      "group": "decide",
+      "meaning": "Three different alternatives. For each, the upside, the cost, and when it is the wrong pick.",
+      "when": "You have not chosen and want real options.",
+      "avoid": "Don't offer three wordings of the same option.",
+      "steps": [
+        "Three options.",
+        "Upside, cost, and the case where it is wrong.",
+        "Don't pick yet unless another command says to decide."
+      ],
+      "example": "Alt3 for saving a brief: this device, an account, or no save."
+    },
+    {
+      "id": "compare",
+      "code": "/compare",
+      "group": "decide",
+      "meaning": "Compare two or more options side by side.",
+      "when": "The options exist and you want them lined up.",
+      "avoid": "Don't add a recommendation unless asked. Comparison first.",
+      "steps": [
+        "Same criteria for each.",
+        "Use a table if there are more than two criteria.",
+        "Leave the call for /decide if it wasn't requested."
+      ],
+      "example": "Compare starring on device versus a written list."
+    },
+    {
+      "id": "decide",
+      "code": "/decide",
+      "group": "decide",
+      "meaning": "Make the call. Say why, and what would change it.",
+      "when": "You want a decision, not a survey.",
+      "avoid": "Don't hand the choice back. Don't hide the condition that would flip it.",
+      "steps": [
+        "State the call.",
+        "Two sentences on why.",
+        "What would change it."
+      ],
+      "example": "Decide whether the agent book should open by default."
+    },
+    {
+      "id": "riskmap",
+      "code": "/riskmap",
+      "group": "decide",
+      "meaning": "Identify the risks that can actually happen, each with a mitigation you can do now.",
+      "when": "You are about to commit to a plan.",
+      "avoid": "Don't list generic risks. Don't mitigate with 'be careful.'",
+      "steps": [
+        "Risks that can happen on this task.",
+        "A mitigation available now.",
+        "Drop risks you cannot act on."
+      ],
+      "example": "Riskmap for storing the brief in local storage."
+    },
+    {
+      "id": "assumptions",
+      "code": "/assumptions",
+      "group": "decide",
+      "meaning": "Identify the hidden assumptions in the claim or the plan.",
+      "when": "Something sounds decided but rests on unstated premises.",
+      "avoid": "Don't treat an assumption as a fact once you've named it.",
+      "steps": [
+        "List the assumptions.",
+        "Mark which ones are load-bearing.",
+        "Say which one to check first."
+      ],
+      "example": "Assumptions in 'students will paste the whole book into the agent.'"
+    },
+    {
+      "id": "tradeoff",
+      "code": "/tradeoff",
+      "group": "decide",
+      "meaning": "Name the tradeoff being ignored.",
+      "when": "A plan pretends you can have both.",
+      "avoid": "Don't resolve it unless asked. Name it.",
+      "steps": [
+        "Name the two things in tension.",
+        "Say what you give up on each side."
+      ],
+      "example": "Tradeoff between a full list on one screen and a readable phone layout."
+    },
+    {
+      "id": "priority",
+      "code": "/priority",
+      "group": "decide",
+      "meaning": "Order the work. Say what drops if time runs out.",
+      "when": "There is more to do than will fit.",
+      "avoid": "Don't rank everything as high.",
+      "steps": [
+        "Order the items.",
+        "Say the cut line.",
+        "Say what 'done enough' means."
+      ],
+      "example": "Priority: command list, briefs, picture-book link, presets."
+    },
+    {
+      "id": "scope-cut",
+      "code": "/scope-cut",
+      "group": "decide",
+      "meaning": "Propose the smaller version that still ships the point.",
+      "when": "The full idea is too big for this pass.",
+      "avoid": "Don't cut the part that makes it the thing. Cut the ornaments.",
+      "steps": [
+        "State the point.",
+        "State the smaller version.",
+        "State what you are leaving out."
+      ],
+      "example": "Scope-cut the command book so it still counts as a full list."
+    },
+    {
+      "id": "postmortem",
+      "code": "/postmortem",
+      "group": "decide",
+      "meaning": "What failed, the cause, and the change in how we'll do it.",
+      "when": "A piece of work missed and you want the lesson.",
+      "avoid": "Don't write a blame story. Don't propose a process nobody will follow.",
+      "steps": [
+        "What failed.",
+        "The cause.",
+        "The change in the next attempt."
+      ],
+      "example": "Postmortem on the last UI that looked fine in dev and broke when built."
+    },
+    {
+      "id": "nextstep",
+      "code": "/nextstep",
+      "group": "decide",
+      "meaning": "Choose one useful next action, and how to start it.",
+      "when": "You are stalled and need the next move, not a plan.",
+      "avoid": "Don't list five next steps.",
+      "steps": [
+        "One action.",
+        "The first physical step.",
+        "What done looks like for that step."
+      ],
+      "example": "Nextstep after the command list is in."
+    },
+    {
+      "id": "counter",
+      "code": "/counter",
+      "group": "decide",
+      "meaning": "Generate the strongest counterargument.",
+      "when": "You want the best case against the current plan.",
+      "avoid": "Don't argue a weak version so the plan still wins.",
+      "steps": [
+        "State the plan in one line.",
+        "Give the strongest case against it.",
+        "Say whether that case changes the call."
+      ],
+      "example": "Counter: opening the agent book by default hides the picture codes."
+    },
+    {
+      "id": "redteam",
+      "code": "/redteam",
+      "group": "decide",
+      "meaning": "Critique aggressively to expose weaknesses.",
+      "when": "You want the plan stressed, not encouraged.",
+      "avoid": "Don't insult. Attack the plan.",
+      "steps": [
+        "Name the failure modes.",
+        "Say which one is fatal.",
+        "Stop before proposing a replacement unless asked."
+      ],
+      "example": "Redteam the idea of pasting twelve commands at once."
+    },
+    {
+      "id": "pareto",
+      "code": "/pareto",
+      "group": "decide",
+      "meaning": "Find the small set of actions that drive most of the result.",
+      "when": "The list of work is long and you want the few that matter.",
+      "avoid": "Don't pretend the rest is worthless. Say it is the rest.",
+      "steps": [
+        "Name the few actions.",
+        "Say the result they get you.",
+        "Say what you are explicitly not doing first."
+      ],
+      "example": "Pareto for learning a joint exam this week."
+    }
+  ],
+  "cross_catalog_collisions": [
+    {
+      "id": "trace",
+      "code": "/trace",
+      "meaning": "Walk the execution path and name where state goes wrong.",
+      "other_book": "codes",
+      "other_id": "x093",
+      "other_meaning": "Walks the execution path and names where state goes wrong."
+    },
+    {
+      "id": "explaincode",
+      "code": "/explaincode",
+      "meaning": "Explain what the code is doing, in plain language.",
+      "other_book": "codes",
+      "other_id": "x100",
+      "other_meaning": "Explains what the code is doing in plain language."
+    },
+    {
+      "id": "diff",
+      "code": "/diff",
+      "meaning": "Explain what a change does and why it matters.",
+      "other_book": "codes",
+      "other_id": "x106",
+      "other_meaning": "Explains what a change does and why it matters."
+    },
+    {
+      "id": "api",
+      "code": "/api",
+      "meaning": "Design a small, consistent interface for the task.",
+      "other_book": "codes",
+      "other_id": "x099",
+      "other_meaning": "Designs a small, consistent interface for the task."
+    },
+    {
+      "id": "types",
+      "code": "/types",
+      "meaning": "Add or tighten types without changing behavior.",
+      "other_book": "codes",
+      "other_id": "x097",
+      "other_meaning": "Adds or tightens types without changing behavior."
+    },
+    {
+      "id": "naming",
+      "code": "/naming",
+      "meaning": "Propose clearer names for unclear symbols.",
+      "other_book": "codes",
+      "other_id": "x098",
+      "other_meaning": "Proposes clearer names for unclear symbols."
+    },
+    {
+      "id": "refactor",
+      "code": "/refactor",
+      "meaning": "Restructure the code without changing behavior.",
+      "other_book": "codes",
+      "other_id": "x095",
+      "other_meaning": "Restructures the code without changing behavior."
+    },
+    {
+      "id": "simplifycode",
+      "code": "/simplifycode",
+      "meaning": "Reduce branching and indirection while keeping behavior.",
+      "other_book": "codes",
+      "other_id": "x096",
+      "other_meaning": "Reduces branching and indirection while keeping behavior."
+    },
+    {
+      "id": "debug",
+      "code": "/debug",
+      "meaning": "Find the likely bug. Name the cause, then fix the cause.",
+      "other_book": "codes",
+      "other_id": "x090",
+      "other_meaning": "Finds likely bugs or errors in the code."
+    },
+    {
+      "id": "repro",
+      "code": "/repro",
+      "meaning": "Turn a bug report into the smallest steps that reproduce it.",
+      "other_book": "codes",
+      "other_id": "x091",
+      "other_meaning": "Turns a bug report into the smallest steps that reproduce it."
+    },
+    {
+      "id": "edgecases",
+      "code": "/edgecases",
+      "meaning": "List the inputs most likely to break this.",
+      "other_book": "codes",
+      "other_id": "x092",
+      "other_meaning": "Lists the inputs most likely to break this code."
+    },
+    {
+      "id": "tests",
+      "code": "/tests",
+      "meaning": "Write tests for the important paths and the edge cases.",
+      "other_book": "codes",
+      "other_id": "x103",
+      "other_meaning": "Writes tests for the important paths and edge cases."
+    },
+    {
+      "id": "review",
+      "code": "/review",
+      "meaning": "Review the code for bugs, risks, and concrete fixes.",
+      "other_book": "codes",
+      "other_id": "x101",
+      "other_meaning": "Reviews the code for bugs, risks, and concrete fixes."
+    },
+    {
+      "id": "security",
+      "code": "/security",
+      "meaning": "Review for injection, auth gaps, and data exposure.",
+      "other_book": "codes",
+      "other_id": "x102",
+      "other_meaning": "Reviews for injection, auth gaps, and data exposure."
+    },
+    {
+      "id": "optimize",
+      "code": "/optimize",
+      "meaning": "Improve the hot path. Leave the rest alone.",
+      "other_book": "codes",
+      "other_id": "x094",
+      "other_meaning": "Improves the code for speed, efficiency, or cleanliness."
+    },
+    {
+      "id": "docs",
+      "code": "/docs",
+      "meaning": "Add concise documentation for the public surface.",
+      "other_book": "codes",
+      "other_id": "x104",
+      "other_meaning": "Adds concise documentation for the public surface."
+    },
+    {
+      "id": "factcheck",
+      "code": "/factcheck",
+      "meaning": "Check factual claims and flag what could not be verified.",
+      "other_book": "codes",
+      "other_id": "x050",
+      "other_meaning": "Checks factual claims and flags what could not be verified."
+    },
+    {
+      "id": "systemmap",
+      "code": "/systemmap",
+      "meaning": "Map the actors, forces, and relationships.",
+      "other_book": "codes",
+      "other_id": "x071",
+      "other_meaning": "Maps actors, forces, and relationships in a system."
+    },
+    {
+      "id": "reverseengineer",
+      "code": "/reverseengineer",
+      "meaning": "Work backward from the result to how it is produced.",
+      "other_book": "codes",
+      "other_id": "x068",
+      "other_meaning": "Works backward to infer how something functions."
+    },
+    {
+      "id": "rewrite",
+      "code": "/rewrite",
+      "meaning": "Rephrase the text I give you. Keep the meaning.",
+      "other_book": "codes",
+      "other_id": "x002",
+      "other_meaning": "Rephrases while keeping the core meaning."
+    },
+    {
+      "id": "shorten",
+      "code": "/shorten",
+      "meaning": "Condense it. Same facts.",
+      "other_book": "codes",
+      "other_id": "x008",
+      "other_meaning": "Condenses into a tighter version."
+    },
+    {
+      "id": "simplify",
+      "code": "/simplify",
+      "meaning": "Make it easier to understand, in plainer language.",
+      "other_book": "codes",
+      "other_id": "x010",
+      "other_meaning": "Makes text easier to understand with plainer language."
+    },
+    {
+      "id": "human",
+      "code": "/human",
+      "meaning": "Rewrite so it sounds natural, not like a template.",
+      "other_book": "codes",
+      "other_id": "x001",
+      "other_meaning": "Rewrites text so it sounds natural, not robotic."
+    },
+    {
+      "id": "formal",
+      "code": "/formal",
+      "meaning": "Change the tone to professional.",
+      "other_book": "codes",
+      "other_id": "x004",
+      "other_meaning": "Changes the tone to professional."
+    },
+    {
+      "id": "bullets",
+      "code": "/bullets",
+      "meaning": "Turn the output into bullet points.",
+      "other_book": "codes",
+      "other_id": "x016",
+      "other_meaning": "Turns the output into bullet points."
+    },
+    {
+      "id": "tldr",
+      "code": "/tldr",
+      "meaning": "Give the shortest useful summary.",
+      "other_book": "codes",
+      "other_id": "x015",
+      "other_meaning": "Gives the shortest useful summary."
+    },
+    {
+      "id": "checklist",
+      "code": "/checklist",
+      "meaning": "Turn this into a checklist. One action per line.",
+      "other_book": "codes",
+      "other_id": "s440",
+      "other_meaning": "Create a checklist of actions or parts."
+    },
+    {
+      "id": "critique",
+      "code": "/critique",
+      "meaning": "Review the work and point out what needs improvement.",
+      "other_book": "codes",
+      "other_id": "x075",
+      "other_meaning": "Reviews the work and points out what needs improvement."
+    },
+    {
+      "id": "hero",
+      "code": "/hero",
+      "meaning": "A clean hero image with the subject as the focal point.",
+      "other_book": "codes",
+      "other_id": "s352",
+      "other_meaning": "Create a clean hero image with the subject as the focal point."
+    },
+    {
+      "id": "ugc",
+      "code": "/ugc",
+      "meaning": "A user-style photo or clip, as if someone is showing it to a friend.",
+      "other_book": "codes",
+      "other_id": "x107",
+      "other_meaning": "A short user-style video of the product, as if someone is showing it to a friend."
+    },
+    {
+      "id": "teachme",
+      "code": "/teachme",
+      "meaning": "Teach it as a lesson: the idea, a concrete case, the usual mistake.",
+      "other_book": "codes",
+      "other_id": "x039",
+      "other_meaning": "Frames the response as a lesson."
+    },
+    {
+      "id": "quizme",
+      "code": "/quizme",
+      "meaning": "Ask one question. Wait for the answer. Then mark it.",
+      "other_book": "codes",
+      "other_id": "x033",
+      "other_meaning": "Quizzes one question at a time and waits for an answer."
+    },
+    {
+      "id": "socratic",
+      "code": "/socratic",
+      "meaning": "Teach by asking guided questions.",
+      "other_book": "codes",
+      "other_id": "x036",
+      "other_meaning": "Teaches by asking guided questions."
+    },
+    {
+      "id": "stepbystep",
+      "code": "/stepbystep",
+      "meaning": "Force a sequential, ordered explanation.",
+      "other_book": "codes",
+      "other_id": "x042",
+      "other_meaning": "Forces a sequential, ordered explanation."
+    },
+    {
+      "id": "misconceptions",
+      "code": "/misconceptions",
+      "meaning": "List the common misunderstandings about this topic.",
+      "other_book": "codes",
+      "other_id": "x038",
+      "other_meaning": "Lists common misunderstandings about a topic."
+    },
+    {
+      "id": "feynman",
+      "code": "/feynman",
+      "meaning": "Explain it as simply as possible, to test whether it is actually understood.",
+      "other_book": "codes",
+      "other_id": "x037",
+      "other_meaning": "Explains as simply as possible to test true understanding."
+    },
+    {
+      "id": "alt3",
+      "code": "/alt3",
+      "meaning": "Three different alternatives. For each, the upside, the cost, and when it is the wrong pick.",
+      "other_book": "codes",
+      "other_id": "x078",
+      "other_meaning": "Provides three different alternatives."
+    },
+    {
+      "id": "compare",
+      "code": "/compare",
+      "meaning": "Compare two or more options side by side.",
+      "other_book": "codes",
+      "other_id": "x044",
+      "other_meaning": "Compares two or more options side by side."
+    },
+    {
+      "id": "decide",
+      "code": "/decide",
+      "meaning": "Make the call. Say why, and what would change it.",
+      "other_book": "codes",
+      "other_id": "x048",
+      "other_meaning": "Builds a structured decision framework."
+    },
+    {
+      "id": "riskmap",
+      "code": "/riskmap",
+      "meaning": "Identify the risks that can actually happen, each with a mitigation you can do now.",
+      "other_book": "codes",
+      "other_id": "x046",
+      "other_meaning": "Identifies the key risks in a plan."
+    },
+    {
+      "id": "assumptions",
+      "code": "/assumptions",
+      "meaning": "Identify the hidden assumptions in the claim or the plan.",
+      "other_book": "codes",
+      "other_id": "x045",
+      "other_meaning": "Identifies hidden assumptions in a claim."
+    },
+    {
+      "id": "nextstep",
+      "code": "/nextstep",
+      "meaning": "Choose one useful next action, and how to start it.",
+      "other_book": "codes",
+      "other_id": "x052",
+      "other_meaning": "Chooses one useful next action and how to start it."
+    },
+    {
+      "id": "counter",
+      "code": "/counter",
+      "meaning": "Generate the strongest counterargument.",
+      "other_book": "codes",
+      "other_id": "x056",
+      "other_meaning": "Generates the strongest counterargument."
+    },
+    {
+      "id": "redteam",
+      "code": "/redteam",
+      "meaning": "Critique aggressively to expose weaknesses.",
+      "other_book": "codes",
+      "other_id": "x060",
+      "other_meaning": "Critiques aggressively to expose weaknesses."
+    },
+    {
+      "id": "pareto",
+      "code": "/pareto",
+      "meaning": "Find the small set of actions that drive most of the result.",
+      "other_book": "codes",
+      "other_id": "x049",
+      "other_meaning": "Finds the small actions that drive most of the result."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cuebook",
+  "version": "1.0.0",
+  "description": "Find and compose Cuebook's agent commands and creative codes into clear, scoped task briefs and grounded prompts.",
+  "author": {
+    "name": "Soren",
+    "url": "https://github.com/sorensadrgit-art"
+  },
+  "homepage": "https://github.com/sorensadrgit-art/GrokApp",
+  "repository": "https://github.com/sorensadrgit-art/GrokApp",
+  "keywords": ["cuebook", "agent-commands", "creative-direction", "prompts", "codebook"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Cuebook",
+        "shortDescription": "Agent briefs & creative codes",
+        "longDescription": "Turn Cuebook's 123 agent commands, 8 presets, and 963 creative codes into useful task briefs and prompts. Search the bundled catalogs, explain exact meanings, compose up to six ordered agent commands or four creative directions, and export grounded results. The plugin keeps the agent book and creative codebook distinct, preserves source labels, and uses the host's available tools only for work the user requests. Catalogs are bundled snapshots; browser-saved favorites and app state are not synchronized.",
+        "developerName": "Soren",
+        "category": "Productivity",
+        "capabilities": ["Search bundled catalogs", "Compose agent task briefs", "Combine creative directions", "Export selected commands"],
+        "websiteURL": "https://github.com/sorensadrgit-art/GrokApp",
+        "defaultPrompt": [
+          "Use Cuebook to build a bug-fixing brief for my project.",
+          "Find Cuebook codes for a cinematic luxury product image.",
+          "Explain /debug in both Cuebook catalogs and show how they differ."
+        ],
+        "brandColor": "#52600B",
+        "logo": "./assets/logo-dark.svg",
+        "composerIcon": "./assets/icon.svg"
+      }
+    }
+  }
+}

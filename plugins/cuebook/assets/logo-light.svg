@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" fill="none">
+  <title>Cuebook open codebook</title>
+  <rect width="128" height="128" rx="28" fill="#F6F1E7"/>
+  <path d="M22 32C37 26 50 28 64 36C78 28 91 26 106 32V98C91 92 78 94 64 102C50 94 37 92 22 98V32Z" stroke="#12110E" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M64 36V101" stroke="#12110E" stroke-width="4.5"/>
+  <path d="M47 49L35 78" stroke="#52600B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M77 50H93M77 64H90M77 78H85" stroke="#52600B" stroke-width="4.5" stroke-linecap="round"/>
+</svg>

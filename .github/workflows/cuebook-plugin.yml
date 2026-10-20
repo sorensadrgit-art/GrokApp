@@ -1,0 +1,53 @@
+name: Cuebook plugin
+
+on:
+  push:
+    paths:
+      - "plugins/cuebook/**"
+      - "plugin-tools/**"
+      - "src/lib/agent-catalog.ts"
+      - "src/lib/catalog.ts"
+      - "src/data/codes.json"
+      - "src/components/cuebook.tsx"
+      - "package.json"
+      - ".github/workflows/cuebook-plugin.yml"
+  pull_request:
+    paths:
+      - "plugins/cuebook/**"
+      - "plugin-tools/**"
+      - "src/lib/agent-catalog.ts"
+      - "src/lib/catalog.ts"
+      - "src/data/codes.json"
+      - "src/components/cuebook.tsx"
+      - "package.json"
+      - ".github/workflows/cuebook-plugin.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out full catalog history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Validate generated sources and package
+        run: npm run plugin:check
+      - name: Test catalog behavior and package boundaries
+        run: npm run plugin:test
+      - name: Build deterministic archive
+        run: npm run plugin:pack
+      - name: Smoke the extracted plugin
+        run: python3 -B plugin-tools/smoke-archive.py artifacts/cuebook-1.0.0.zip
