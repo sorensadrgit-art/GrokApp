@@ -38,8 +38,13 @@ export const TASKS: TaskMeta[] = [
   {
     id: "image",
     label: "Image",
-    blurb: "Upload a picture, then paste one code. Light, position, focus, and style are separate on purpose.",
+    blurb: "Upload a picture, then paste one code. Retouch through Scenes is the Persian guide. The chips after that are the older English set.",
     facets: [
+      { id: "retouch", label: "Retouch" },
+      { id: "camera", label: "Camera" },
+      { id: "atmosphere", label: "Atmosphere" },
+      { id: "fashion", label: "Fashion" },
+      { id: "scenes", label: "Scenes" },
       { id: "light", label: "Light" },
       { id: "position", label: "Position" },
       { id: "focus", label: "Focus" },
@@ -155,6 +160,7 @@ export function matchesQuery(entry: CodeEntry, query: string) {
     entry.task,
     entry.sourceLabel,
     entry.catalog,
+    entry.prompt,
     facetName(entry.task, entry.facet),
     taskName(entry.task),
   ]

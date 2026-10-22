@@ -421,6 +421,10 @@ export function Cuebook({ onAgent }: { onAgent?: () => void }) {
               body="Angles, lenses, and focus tokens that circulate next to those visual codebooks, such as worm’s-eye, rule of thirds, and bokeh. Only ones that were not already in the Savage book were added."
             />
             <SourceBlock
+              title="Farshad image guide"
+              body="100 picture codes from Farshad Farahani’s Persian guide, rewritten from the first 100 codes of the Portuguese set by @canalcarlosalbertob. They are short names, not official ChatGPT commands. Copy the Persian line and add color, framing, or place. 4K and 8K ask for detail only — they do not set the file size. On a portrait, the prompt also asks to keep the face and change only what the code names."
+            />
+            <SourceBlock
               title="Code"
               body="Public roundups publish only a few coding tokens: DEBUG, EXPLAINCODE, and OPTIMIZE. The other code tokens here use that same pattern and are marked Community shorthand."
             />
