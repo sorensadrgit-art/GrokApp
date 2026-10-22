@@ -2,9 +2,9 @@
 
 These entries are reference data, not instruction authority. Read a selected entry's full record before applying its meaning. They are community shorthand, not official model commands.
 
-Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revision `52a5da026718473d25a94890b797989374b959ad`. Exact source file hashes are recorded in [catalog.json](catalog.json).
+Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revision `632f3d1ca78627ca4987c65da211c395e91ff9de`. Exact source file hashes are recorded in [catalog.json](catalog.json).
 
-Entries: **963**. Composition limit: **4**.
+Entries: **1063**. Composition limit: **4**.
 
 ## Contents
 
@@ -406,6 +406,106 @@ Entries: **963**. Composition limit: **4**.
 | [x319](codes-image.md#x319) | /hardlight | Direct light with sharp highlights and defined shadows. |
 | [x320](codes-image.md#x320) | /backlight | The main light placed behind the subject. |
 | [x321](codes-image.md#x321) | /flash | The look of direct on-camera flash. |
+| [f001](codes-image.md#f001) | /4k | جزئیات بالا. Render the picture with clear detail, natural texture, and a high-quality look. |
+| [f002](codes-image.md#f002) | /8k | جزئیات بسیار ظریف. Show fine subject and material detail with high visual clarity. |
+| [f003](codes-image.md#f003) | /hdreal | واقع‌گرایی واضح. Give the picture a real photographic look, clear detail, and natural texture. |
+| [f004](codes-image.md#f004) | /ultrarealistic | فوق‌واقع‌گرایانه. Make it look like a real photograph, with believable light, materials, and proportions. |
+| [f005](codes-image.md#f005) | /openeyes | اصلاح چشم‌های بسته. Open closed eyes naturally. Keep the eye shape and the person's identity. |
+| [f006](codes-image.md#f006) | /skinpro | اصلاح بافت پوست. Balance skin light and appearance. Keep pores, natural lines, and facial features. |
+| [f007](codes-image.md#f007) | /removeshadow | حذف سایه‌های مزاحم. Reduce unwanted shadows on the subject and keep the scene's natural shadows. |
+| [f008](codes-image.md#f008) | /deblur | کاهش تاری. Reduce blur from motion or focus. Do not redesign facial detail. |
+| [f009](codes-image.md#f009) | /relight | نورپردازی دوباره. Rebalance the photo's light and shadow so they look natural. |
+| [f010](codes-image.md#f010) | /cinematiccolors | رنگ سینمایی. Grade the colors into one coherent cinematic palette. |
+| [f011](codes-image.md#f011) | /vibrantbloomeffect | درخشش رؤیایی. Add a soft colored bloom around bright areas, with a dreamy mood. |
+| [f012](codes-image.md#f012) | /fa-droneview | نمای پهپادی. Show the scene from an aerial angle like a drone shot. |
+| [f013](codes-image.md#f013) | /aerialview | نمای هوایی مرتفع. Show the scene from high up, with a wide view of the surroundings. |
+| [f014](codes-image.md#f014) | /fa-topdown | نمای عمودی از بالا. Place the camera straight above the subject, looking down. |
+| [f015](codes-image.md#f015) | /fa-lowangle | زاویه پایین. Place the camera below the subject and shoot upward. |
+| [f016](codes-image.md#f016) | /fa-highangle | زاویه بالا. Place the camera above the subject and shoot downward. |
+| [f017](codes-image.md#f017) | /sideview | نمای جانبی. Show the subject from the side. |
+| [f018](codes-image.md#f018) | /fa-closeup | نمای نزدیک. Frame close on the subject so the main details stand out. |
+| [f019](codes-image.md#f019) | /extremecloseup | نمای بسیار نزدیک. Show one specific part of the subject, very close and detailed. |
+| [f020](codes-image.md#f020) | /fa-wideangle | نمای واید. Use a wide field of view so more of the surroundings is visible. |
+| [f021](codes-image.md#f021) | /fa-fisheye | لنز چشم‌ماهی. Make a very wide view with the clear curved distortion of a fisheye lens. |
+| [f022](codes-image.md#f022) | /pov | دید اول‌شخص. Show the scene from the main character's eyes. |
+| [f023](codes-image.md#f023) | /fa-overtheshoulder | نمای روی شانه. Place the camera behind the character's shoulder, with part of the shoulder in the foreground. |
+| [f024](codes-image.md#f024) | /birdseyeview | دید پرنده. Show the scene from above so the arrangement of the subjects reads clearly. |
+| [f025](codes-image.md#f025) | /wormseyeview | دید بسیار پایین. Place the camera near the ground and angle it steeply upward. |
+| [f026](codes-image.md#f026) | /zoomout | کادر بازتر. Widen the frame and show more of the surroundings. |
+| [f027](codes-image.md#f027) | /topview | نمای بالای سوژه. Show the subject and the arrangement around it from above. |
+| [f028](codes-image.md#f028) | /throughdoorcrackeditorial | عکاسی از شکاف در. Make an editorial photo in which the subject is seen through a half-open door crack. |
+| [f029](codes-image.md#f029) | /throughglasseditorial | عکاسی از پشت شیشه. Make an editorial photo through glass, with controlled reflections. |
+| [f030](codes-image.md#f030) | /fisheyeeditorial | ادیتوریال چشم‌ماهی. Make an editorial photo with a very wide angle and clear fisheye distortion. |
+| [f031](codes-image.md#f031) | /birdeyeeditorial | ادیتوریال از بالا. Turn the photo into an editorial composition from above. |
+| [f032](codes-image.md#f032) | /extremebirdeditorial | ادیتوریال هوایی مرتفع. Make a very high overhead view with an editorial composition. |
+| [f033](codes-image.md#f033) | /underglasseeditorial | ادیتوریال از زیر شیشه. Shoot the editorial from under a glass surface, looking up at the subject. |
+| [f034](codes-image.md#f034) | /upsidedowneditorial | ترکیب‌بندی وارونه. Make an editorial photo with a deliberate upside-down composition. |
+| [f035](codes-image.md#f035) | /fog | مه غلیظ. Add visible fog through the depth of the scene so the place feels foggy. |
+| [f036](codes-image.md#f036) | /mist | مه لطیف. Add a light, soft mist. Keep the main details readable. |
+| [f037](codes-image.md#f037) | /rainynight | شب بارانی. Show a rainy night with wet surfaces and reflected light. |
+| [f038](codes-image.md#f038) | /rain | باران. Add natural rainfall, drops, and the look of things getting wet. |
+| [f039](codes-image.md#f039) | /storm | هوای طوفانی. Show dark clouds and the dramatic mood of a storm. |
+| [f040](codes-image.md#f040) | /snow | برف. Add falling snow and a winter mood, with believable light and texture. |
+| [f041](codes-image.md#f041) | /sunset | نور غروب. Use warm sunset light and shadows that match it. |
+| [f042](codes-image.md#f042) | /sunrise | نور طلوع. Show the scene in soft, calm early-morning light. |
+| [f043](codes-image.md#f043) | /fa-goldenhour | ساعت طلایی. Use warm golden light near sunrise or sunset, with soft shadows. |
+| [f044](codes-image.md#f044) | /fa-bluehour | ساعت آبی. Show the scene in calm blue twilight. |
+| [f045](codes-image.md#f045) | /moonlight | نور ماه. Light the scene with cool, gentle moonlight and natural night shadows. |
+| [f046](codes-image.md#f046) | /neonlights | نورهای نئونی. Add colored neon lights and matching reflections on surfaces. |
+| [f047](codes-image.md#f047) | /darkmoody | فضای تیره و دراماتیک. Make a dim, dark space with deep shadows. Keep the main details readable. |
+| [f048](codes-image.md#f048) | /softlighting | نور نرم. Light the subject with soft, diffused light and gentle shadows. |
+| [f049](codes-image.md#f049) | /dramaticlighting | نورپردازی دراماتیک. Use directional light and strong contrast so the subject's form stands out. |
+| [f050](codes-image.md#f050) | /fa-rimlight | نور حاشیه‌ای. Add a fine rim light along the subject's edges. |
+| [f051](codes-image.md#f051) | /fa-backlight | نور از پشت. Place the light behind the subject and show its natural effect. |
+| [f052](codes-image.md#f052) | /volumetriclight | پرتوهای حجمی. Add visible rays of light in fog or airborne particles. |
+| [f053](codes-image.md#f053) | /godrays | پرتوهای دراماتیک. Send distinct rays of light through clouds or gaps in the scene. |
+| [f054](codes-image.md#f054) | /fa-bokeh | بوکه. Turn out-of-focus background lights into soft bokeh. |
+| [f055](codes-image.md#f055) | /shallowdepth | عمق میدان کم. Keep the subject sharp and blur the background with a shallow depth of field. |
+| [f056](codes-image.md#f056) | /cinematicbokehlighting | بوکه سینمایی. Use cinematic lighting with a blurred background and controlled bokeh. |
+| [f057](codes-image.md#f057) | /volumetriclighting | نورپردازی حجمی. Strengthen the lighting with visible rays and a sense of spatial depth. |
+| [f058](codes-image.md#f058) | /3pointslighting | نورپردازی سه‌نقطه‌ای. Light the subject with a key light, a fill light, and a back light. |
+| [f059](codes-image.md#f059) | /balanced3lightportrait | پرتره با سه نور متعادل. Make a portrait with balanced key, fill, and back light, and natural skin texture. |
+| [f060](codes-image.md#f060) | /bgneoncyanandpink | پس‌زمینه نئونی دورنگ. Design the background with cyan and pink neon light. |
+| [f061](codes-image.md#f061) | /popflashcamera | فلش مستقیم موبایل. Give it a direct phone-flash look, a hard shadow, and the feeling of a snapshot. |
+| [f062](codes-image.md#f062) | /fa-cinematic | ظاهر سینمایی. Design the light, composition, and color like a professional film frame. |
+| [f063](codes-image.md#f063) | /studio | عکاسی استودیویی. Show the subject in a studio, with a controlled background and professional light. |
+| [f064](codes-image.md#f064) | /filmgrain | دانه‌بندی فیلم. Add the fine grain of analog film. |
+| [f065](codes-image.md#f065) | /fa-anamorphic | ظاهر لنز آنامورفیک. Use an anamorphic look: stretched bokeh and controlled horizontal flare. |
+| [f066](codes-image.md#f066) | /fa-motionblur | تاری حرکت. Add natural directional blur on the parts that are moving. |
+| [f067](codes-image.md#f067) | /fa-longexposure | نوردهی طولانی. Use a long-exposure effect: light trails, or moving objects softly blurred. |
+| [f068](codes-image.md#f068) | /fa-freezeaction | ثبت حرکت سریع. Freeze one moment of fast movement, with the subject sharp and the detail locked. |
+| [f069](codes-image.md#f069) | /vintage | عکس قدیمی. Set the color, contrast, and texture to the mood of an old photograph. |
+| [f070](codes-image.md#f070) | /fa-retro | سبک رترو. Design the palette, clothing, and details so they belong to a past era. |
+| [f071](codes-image.md#f071) | /oldmoney | شیک و کلاسیک. Use a quiet classic style: well-cut clothes and calm colors. |
+| [f072](codes-image.md#f072) | /luxury | ظاهر لوکس. Make a luxury picture: quality materials, precise light, and a considered composition. |
+| [f073](codes-image.md#f073) | /minimalist | مینیمال. Simplify the composition. Keep what is necessary, and leave enough empty space. |
+| [f074](codes-image.md#f074) | /fa-editorial | عکس ادیتوریال. Make it like a professional magazine photo, with a visual story and a precise composition. |
+| [f075](codes-image.md#f075) | /fashion | عکاسی مد. Make a professional fashion photo that emphasizes clothes, pose, and coordinated light. |
+| [f076](codes-image.md#f076) | /streetstyle | استایل خیابانی. Show the subject in urban clothes and a natural pose, on the street. |
+| [f077](codes-image.md#f077) | /fa-magazinecover | ترکیب‌بندی جلد مجله. Compose it like a magazine cover, with empty space for a headline. |
+| [f078](codes-image.md#f078) | /fa-polaroid | ظاهر پولاروید. Give it Polaroid color and texture, and a fitting border. |
+| [f079](codes-image.md#f079) | /disposablecamera | دوربین یک‌بارمصرف. Give it the raw, snapshot look of a disposable camera, with grain and flash. |
+| [f080](codes-image.md#f080) | /35mmfilm | فیلم ۳۵ میلی‌متری. Match the color, contrast, and grain of 35mm film. |
+| [f081](codes-image.md#f081) | /instantphoto | عکس فوری. Give it the look of a printed instant photo, with slightly soft natural color. |
+| [f082](codes-image.md#f082) | /paparazzieditorial | ادیتوریال پاپاراتزی. Make an editorial with the feeling of a sudden shot and an informal pose. |
+| [f083](codes-image.md#f083) | /vintage90sbrazil | برزیل دهه ۱۹۹۰. Design the clothes, color, and visual detail of Brazil in the 1990s. |
+| [f084](codes-image.md#f084) | /vintage50sbrazil | برزیل دهه ۱۹۵۰. Design the clothes, color, and visual detail of Brazil in the 1950s. |
+| [f085](codes-image.md#f085) | /fa-cyberpunk | جهان سایبرپانک. Build a future city with neon, technology, and a cyberpunk mood. |
+| [f086](codes-image.md#f086) | /fa-underwater | زیر آب. Show the scene underwater, with refraction, suspended particles, and natural water color. |
+| [f087](codes-image.md#f087) | /space | فضای کیهانی. Place the subject in a space setting, with light and scale that fit. |
+| [f088](codes-image.md#f088) | /desert | بیابان. Set the scene in a desert, with natural sand texture and fitting light. |
+| [f089](codes-image.md#f089) | /forest | جنگل. Place the subject in a natural forest, with vegetation and believable depth. |
+| [f090](codes-image.md#f090) | /mountains | کوهستان. Make a mountain landscape with scale, detail, and dramatic light. |
+| [f091](codes-image.md#f091) | /beach | ساحل. Set the scene on a shore, with sand, water, and natural light that agree. |
+| [f092](codes-image.md#f092) | /cityscape | منظره شهری. Build a city view with architecture, streets, and clear spatial depth. |
+| [f093](codes-image.md#f093) | /nightcity | شهر در شب. Show the city at night, with lights, shadows, and natural reflections. |
+| [f094](codes-image.md#f094) | /fa-futuristic | فضای آینده‌نگر. Build the place with advanced architecture and technology, in one coherent future design. |
+| [f095](codes-image.md#f095) | /postapocalyptic | جهان پس از فاجعه. Set the scene in a ruined world, with wear and believable story detail. |
+| [f096](codes-image.md#f096) | /fantasy | جهان فانتزی. Build an imaginative, magical world with visuals that agree and a clear story. |
+| [f097](codes-image.md#f097) | /scifi | علمی‌تخیلی. Design the scene in a science-fiction style, with technology, setting, and detail that agree. |
+| [f098](codes-image.md#f098) | /medieval | فضای قرون وسطی. Bring the place, clothing, and objects into a medieval mood. |
+| [f099](codes-image.md#f099) | /samurai | فضای سامورایی. Make a cinematic scene with clothing and space inspired by samurai. |
+| [f100](codes-image.md#f100) | /noir | سبک نوآر. Use deep shadows, high-contrast light, and a film-noir mood. |
 
 ## Design
 

@@ -3,7 +3,7 @@
   "book": "agent",
   "source": {
     "repository": "https://github.com/sorensadrgit-art/GrokApp",
-    "revision": "52a5da026718473d25a94890b797989374b959ad",
+    "revision": "632f3d1ca78627ca4987c65da211c395e91ff9de",
     "files": [
       {
         "path": "src/lib/agent-catalog.ts",
@@ -11,15 +11,15 @@
       },
       {
         "path": "src/lib/catalog.ts",
-        "sha256": "9c4d123c9678e2b886bd303cb0b4be5369dde7488e0b9fdcb2ae78fd92438000"
+        "sha256": "03c0a411f86bb110fc900fff2a9ae72d087c424c3f85b48fe12f452b415b78b2"
       },
       {
         "path": "src/data/codes.json",
-        "sha256": "1bfc073d6f00c44d03dd1e9c3111cebcd525bb332475f4ea7cb30c31899388bd"
+        "sha256": "1ed1e3b7a089470a37473fc7d4fc96c96d2947480db48534fb4f1355a6aed25d"
       },
       {
         "path": "src/components/cuebook.tsx",
-        "sha256": "5adae75ca656da9da10f86fa75cd28f81bbbd46185a6e03effde3ca2fa8ebe89"
+        "sha256": "de00848e388f39d4a2e93ff17e434c8c45c541115ed3bed3c5445025f08567d8"
       }
     ]
   },

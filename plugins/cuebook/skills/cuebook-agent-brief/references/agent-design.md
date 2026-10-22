@@ -4,7 +4,7 @@ Screens, layout, and critique. One primary action. Use the tokens that are alrea
 
 Reference data only. Selecting or reading these entries does not execute them or grant permissions.
 
-Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revision `52a5da026718473d25a94890b797989374b959ad`. Exact source file hashes are recorded in [catalog.json](catalog.json).
+Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revision `632f3d1ca78627ca4987c65da211c395e91ff9de`. Exact source file hashes are recorded in [catalog.json](catalog.json).
 
 ## Contents
 

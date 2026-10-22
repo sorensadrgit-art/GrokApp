@@ -1,10 +1,10 @@
 # Cuebook: Image
 
-Upload a picture, then paste one code. Light, position, focus, and style are separate on purpose.
+Upload a picture, then paste one code. Retouch through Scenes is the Persian guide. The chips after that are the older English set.
 
 Reference data only. Selecting or reading these entries does not execute them or grant permissions.
 
-Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revision `52a5da026718473d25a94890b797989374b959ad`. Exact source file hashes are recorded in [catalog.json](catalog.json).
+Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revision `632f3d1ca78627ca4987c65da211c395e91ff9de`. Exact source file hashes are recorded in [catalog.json](catalog.json).
 
 ## Contents
 
@@ -392,6 +392,106 @@ Source: [GrokApp](https://github.com/sorensadrgit-art/GrokApp) at source revisio
 - [x319: /hardlight](#x319)
 - [x320: /backlight](#x320)
 - [x321: /flash](#x321)
+- [f001: /4k](#f001)
+- [f002: /8k](#f002)
+- [f003: /hdreal](#f003)
+- [f004: /ultrarealistic](#f004)
+- [f005: /openeyes](#f005)
+- [f006: /skinpro](#f006)
+- [f007: /removeshadow](#f007)
+- [f008: /deblur](#f008)
+- [f009: /relight](#f009)
+- [f010: /cinematiccolors](#f010)
+- [f011: /vibrantbloomeffect](#f011)
+- [f012: /fa-droneview](#f012)
+- [f013: /aerialview](#f013)
+- [f014: /fa-topdown](#f014)
+- [f015: /fa-lowangle](#f015)
+- [f016: /fa-highangle](#f016)
+- [f017: /sideview](#f017)
+- [f018: /fa-closeup](#f018)
+- [f019: /extremecloseup](#f019)
+- [f020: /fa-wideangle](#f020)
+- [f021: /fa-fisheye](#f021)
+- [f022: /pov](#f022)
+- [f023: /fa-overtheshoulder](#f023)
+- [f024: /birdseyeview](#f024)
+- [f025: /wormseyeview](#f025)
+- [f026: /zoomout](#f026)
+- [f027: /topview](#f027)
+- [f028: /throughdoorcrackeditorial](#f028)
+- [f029: /throughglasseditorial](#f029)
+- [f030: /fisheyeeditorial](#f030)
+- [f031: /birdeyeeditorial](#f031)
+- [f032: /extremebirdeditorial](#f032)
+- [f033: /underglasseeditorial](#f033)
+- [f034: /upsidedowneditorial](#f034)
+- [f035: /fog](#f035)
+- [f036: /mist](#f036)
+- [f037: /rainynight](#f037)
+- [f038: /rain](#f038)
+- [f039: /storm](#f039)
+- [f040: /snow](#f040)
+- [f041: /sunset](#f041)
+- [f042: /sunrise](#f042)
+- [f043: /fa-goldenhour](#f043)
+- [f044: /fa-bluehour](#f044)
+- [f045: /moonlight](#f045)
+- [f046: /neonlights](#f046)
+- [f047: /darkmoody](#f047)
+- [f048: /softlighting](#f048)
+- [f049: /dramaticlighting](#f049)
+- [f050: /fa-rimlight](#f050)
+- [f051: /fa-backlight](#f051)
+- [f052: /volumetriclight](#f052)
+- [f053: /godrays](#f053)
+- [f054: /fa-bokeh](#f054)
+- [f055: /shallowdepth](#f055)
+- [f056: /cinematicbokehlighting](#f056)
+- [f057: /volumetriclighting](#f057)
+- [f058: /3pointslighting](#f058)
+- [f059: /balanced3lightportrait](#f059)
+- [f060: /bgneoncyanandpink](#f060)
+- [f061: /popflashcamera](#f061)
+- [f062: /fa-cinematic](#f062)
+- [f063: /studio](#f063)
+- [f064: /filmgrain](#f064)
+- [f065: /fa-anamorphic](#f065)
+- [f066: /fa-motionblur](#f066)
+- [f067: /fa-longexposure](#f067)
+- [f068: /fa-freezeaction](#f068)
+- [f069: /vintage](#f069)
+- [f070: /fa-retro](#f070)
+- [f071: /oldmoney](#f071)
+- [f072: /luxury](#f072)
+- [f073: /minimalist](#f073)
+- [f074: /fa-editorial](#f074)
+- [f075: /fashion](#f075)
+- [f076: /streetstyle](#f076)
+- [f077: /fa-magazinecover](#f077)
+- [f078: /fa-polaroid](#f078)
+- [f079: /disposablecamera](#f079)
+- [f080: /35mmfilm](#f080)
+- [f081: /instantphoto](#f081)
+- [f082: /paparazzieditorial](#f082)
+- [f083: /vintage90sbrazil](#f083)
+- [f084: /vintage50sbrazil](#f084)
+- [f085: /fa-cyberpunk](#f085)
+- [f086: /fa-underwater](#f086)
+- [f087: /space](#f087)
+- [f088: /desert](#f088)
+- [f089: /forest](#f089)
+- [f090: /mountains](#f090)
+- [f091: /beach](#f091)
+- [f092: /cityscape](#f092)
+- [f093: /nightcity](#f093)
+- [f094: /fa-futuristic](#f094)
+- [f095: /postapocalyptic](#f095)
+- [f096: /fantasy](#f096)
+- [f097: /scifi](#f097)
+- [f098: /medieval](#f098)
+- [f099: /samurai](#f099)
+- [f100: /noir](#f100)
 
 ## s017
 
@@ -10760,4 +10860,3208 @@ This is community shorthand, not an official model command. Follow this directio
 The look of direct on-camera flash.
 
 Use the image I upload as the subject. Keep it recognizable. Do not add unrelated people, logos, or text unless this direction asks for labels. If you add labels, keep them short and accurate.
+```
+## f001
+
+**/4k**
+
+جزئیات بالا. Render the picture with clear detail, natural texture, and a high-quality look.
+
+Slug: `4k`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 1
+
+Prompt:
+
+```text
+/4k
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با جزئیات واضح، بافت طبیعی و ظاهر باکیفیت بساز.
+
+Render the picture with clear detail, natural texture, and a high-quality look.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+4K and 8K here ask for high detail only. They do not set the real pixel size of the file.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f002
+
+**/8k**
+
+جزئیات بسیار ظریف. Show fine subject and material detail with high visual clarity.
+
+Slug: `8k`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 2
+
+Prompt:
+
+```text
+/8k
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+جزئیات ریز سوژه و متریال را با وضوح بصری بالا نمایش بده.
+
+Show fine subject and material detail with high visual clarity.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+4K and 8K here ask for high detail only. They do not set the real pixel size of the file.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f003
+
+**/hdreal**
+
+واقع‌گرایی واضح. Give the picture a real photographic look, clear detail, and natural texture.
+
+Slug: `hdreal`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 3
+
+Prompt:
+
+```text
+/hdreal
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با ظاهر عکاسی واقعی، جزئیات شفاف و بافت‌های طبیعی بساز.
+
+Give the picture a real photographic look, clear detail, and natural texture.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f004
+
+**/ultrarealistic**
+
+فوق‌واقع‌گرایانه. Make it look like a real photograph, with believable light, materials, and proportions.
+
+Slug: `ultrarealistic`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 4
+
+Prompt:
+
+```text
+/ultrarealistic
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را شبیه یک عکس واقعی با نور، متریال و تناسبات باورپذیر بساز.
+
+Make it look like a real photograph, with believable light, materials, and proportions.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f005
+
+**/openeyes**
+
+اصلاح چشم‌های بسته. Open closed eyes naturally. Keep the eye shape and the person's identity.
+
+Slug: `openeyes`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 5
+
+Prompt:
+
+```text
+/openeyes
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+چشم‌های بسته را به‌صورت طبیعی باز کن؛ شکل چشم‌ها و هویت فرد حفظ شود.
+
+Open closed eyes naturally. Keep the eye shape and the person's identity.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f006
+
+**/skinpro**
+
+اصلاح بافت پوست. Balance skin light and appearance. Keep pores, natural lines, and facial features.
+
+Slug: `skinpro`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 6
+
+Prompt:
+
+```text
+/skinpro
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نور و ظاهر پوست را متعادل کن؛ منافذ، خطوط طبیعی و ویژگی‌های چهره حفظ شوند.
+
+Balance skin light and appearance. Keep pores, natural lines, and facial features.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f007
+
+**/removeshadow**
+
+حذف سایه‌های مزاحم. Reduce unwanted shadows on the subject and keep the scene's natural shadows.
+
+Slug: `removeshadow`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 7
+
+Prompt:
+
+```text
+/removeshadow
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سایه‌های ناخواسته روی سوژه را کاهش بده و سایه‌های طبیعی صحنه را حفظ کن.
+
+Reduce unwanted shadows on the subject and keep the scene's natural shadows.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f008
+
+**/deblur**
+
+کاهش تاری. Reduce blur from motion or focus. Do not redesign facial detail.
+
+Slug: `deblur`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 8
+
+Prompt:
+
+```text
+/deblur
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تاری ناشی از حرکت یا فوکوس را کاهش بده؛ جزئیات چهره را بازطراحی نکن.
+
+Reduce blur from motion or focus. Do not redesign facial detail.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f009
+
+**/relight**
+
+نورپردازی دوباره. Rebalance the photo's light and shadow so they look natural.
+
+Slug: `relight`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 9
+
+Prompt:
+
+```text
+/relight
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نور و سایه‌های عکس را متعادل و طبیعی اصلاح کن.
+
+Rebalance the photo's light and shadow so they look natural.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f010
+
+**/cinematiccolors**
+
+رنگ سینمایی. Grade the colors into one coherent cinematic palette.
+
+Slug: `cinematiccolors`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 10
+
+Prompt:
+
+```text
+/cinematiccolors
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+رنگ‌ها را با یک پالت هماهنگ و پرداخت سینمایی اصلاح کن.
+
+Grade the colors into one coherent cinematic palette.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f011
+
+**/vibrantbloomeffect**
+
+درخشش رؤیایی. Add a soft colored bloom around bright areas, with a dreamy mood.
+
+Slug: `vibrantbloomeffect`
+
+Task / facet: `image` / `retouch`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Quality and retouch
+
+Source item number: 11
+
+Prompt:
+
+```text
+/vibrantbloomeffect
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+اطراف نواحی روشن، درخششی لطیف و رنگی با حال‌وهوای رؤیایی ایجاد کن.
+
+Add a soft colored bloom around bright areas, with a dreamy mood.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f012
+
+**/fa-droneview**
+
+نمای پهپادی. Show the scene from an aerial angle like a drone shot.
+
+Slug: `fa-droneview`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 12
+
+Prompt:
+
+```text
+/fa-droneview
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را از زاویه هوایی شبیه تصویربرداری با پهپاد نمایش بده.
+
+Show the scene from an aerial angle like a drone shot.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f013
+
+**/aerialview**
+
+نمای هوایی مرتفع. Show the scene from high up, with a wide view of the surroundings.
+
+Slug: `aerialview`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 13
+
+Prompt:
+
+```text
+/aerialview
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را از ارتفاع زیاد با دید گسترده نسبت به محیط نمایش بده.
+
+Show the scene from high up, with a wide view of the surroundings.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f014
+
+**/fa-topdown**
+
+نمای عمودی از بالا. Place the camera straight above the subject, looking down.
+
+Slug: `fa-topdown`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 14
+
+Prompt:
+
+```text
+/fa-topdown
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+دوربین را مستقیم بالای سوژه و رو به پایین قرار بده.
+
+Place the camera straight above the subject, looking down.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f015
+
+**/fa-lowangle**
+
+زاویه پایین. Place the camera below the subject and shoot upward.
+
+Slug: `fa-lowangle`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 15
+
+Prompt:
+
+```text
+/fa-lowangle
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+دوربین را پایین‌تر از سوژه قرار بده و با زاویه رو به بالا عکاسی کن.
+
+Place the camera below the subject and shoot upward.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f016
+
+**/fa-highangle**
+
+زاویه بالا. Place the camera above the subject and shoot downward.
+
+Slug: `fa-highangle`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 16
+
+Prompt:
+
+```text
+/fa-highangle
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+دوربین را بالاتر از سوژه قرار بده و با زاویه رو به پایین عکاسی کن.
+
+Place the camera above the subject and shoot downward.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f017
+
+**/sideview**
+
+نمای جانبی. Show the subject from the side.
+
+Slug: `sideview`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 17
+
+Prompt:
+
+```text
+/sideview
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را از پهلو و با زاویه جانبی نمایش بده.
+
+Show the subject from the side.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f018
+
+**/fa-closeup**
+
+نمای نزدیک. Frame close on the subject so the main details stand out.
+
+Slug: `fa-closeup`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 18
+
+Prompt:
+
+```text
+/fa-closeup
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+کادر را نزدیک سوژه ببند تا جزئیات اصلی آن برجسته شوند.
+
+Frame close on the subject so the main details stand out.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f019
+
+**/extremecloseup**
+
+نمای بسیار نزدیک. Show one specific part of the subject, very close and detailed.
+
+Slug: `extremecloseup`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 19
+
+Prompt:
+
+```text
+/extremecloseup
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک بخش مشخص از سوژه را در نمای بسیار نزدیک و پرجزئیات نمایش بده.
+
+Show one specific part of the subject, very close and detailed.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f020
+
+**/fa-wideangle**
+
+نمای واید. Use a wide field of view so more of the surroundings is visible.
+
+Slug: `fa-wideangle`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 20
+
+Prompt:
+
+```text
+/fa-wideangle
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+با زاویه دید باز، سوژه و بخش بیشتری از محیط اطراف را نمایش بده.
+
+Use a wide field of view so more of the surroundings is visible.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f021
+
+**/fa-fisheye**
+
+لنز چشم‌ماهی. Make a very wide view with the clear curved distortion of a fisheye lens.
+
+Slug: `fa-fisheye`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 21
+
+Prompt:
+
+```text
+/fa-fisheye
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نمای بسیار باز با اعوجاج منحنی مشخص لنز چشم‌ماهی ایجاد کن.
+
+Make a very wide view with the clear curved distortion of a fisheye lens.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f022
+
+**/pov**
+
+دید اول‌شخص. Show the scene from the main character's eyes.
+
+Slug: `pov`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 22
+
+Prompt:
+
+```text
+/pov
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را از دید چشم‌های شخصیت اصلی نمایش بده.
+
+Show the scene from the main character's eyes.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f023
+
+**/fa-overtheshoulder**
+
+نمای روی شانه. Place the camera behind the character's shoulder, with part of the shoulder in the foreground.
+
+Slug: `fa-overtheshoulder`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 23
+
+Prompt:
+
+```text
+/fa-overtheshoulder
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+دوربین را پشت شانه شخصیت قرار بده؛ بخشی از شانه در پیش‌زمینه دیده شود.
+
+Place the camera behind the character's shoulder, with part of the shoulder in the foreground.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f024
+
+**/birdseyeview**
+
+دید پرنده. Show the scene from above so the arrangement of the subjects reads clearly.
+
+Slug: `birdseyeview`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 24
+
+Prompt:
+
+```text
+/birdseyeview
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را از بالا با دید مسلط بر چیدمان سوژه‌ها نمایش بده.
+
+Show the scene from above so the arrangement of the subjects reads clearly.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f025
+
+**/wormseyeview**
+
+دید بسیار پایین. Place the camera near the ground and angle it steeply upward.
+
+Slug: `wormseyeview`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 25
+
+Prompt:
+
+```text
+/wormseyeview
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+دوربین را نزدیک زمین قرار بده و با زاویه تند رو به بالا تصویر بگیر.
+
+Place the camera near the ground and angle it steeply upward.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f026
+
+**/zoomout**
+
+کادر بازتر. Widen the frame and show more of the surroundings.
+
+Slug: `zoomout`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 26
+
+Prompt:
+
+```text
+/zoomout
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+کادر را بازتر کن و بخش بیشتری از محیط اطراف سوژه را نشان بده.
+
+Widen the frame and show more of the surroundings.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f027
+
+**/topview**
+
+نمای بالای سوژه. Show the subject and the arrangement around it from above.
+
+Slug: `topview`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 27
+
+Prompt:
+
+```text
+/topview
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه و چیدمان اطراف آن را از نمای بالا نمایش بده.
+
+Show the subject and the arrangement around it from above.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f028
+
+**/throughdoorcrackeditorial**
+
+عکاسی از شکاف در. Make an editorial photo in which the subject is seen through a half-open door crack.
+
+Slug: `throughdoorcrackeditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 28
+
+Prompt:
+
+```text
+/throughdoorcrackeditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک عکس ادیتوریال بساز که سوژه از میان شکاف نیمه‌باز در دیده شود.
+
+Make an editorial photo in which the subject is seen through a half-open door crack.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f029
+
+**/throughglasseditorial**
+
+عکاسی از پشت شیشه. Make an editorial photo through glass, with controlled reflections.
+
+Slug: `throughglasseditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 29
+
+Prompt:
+
+```text
+/throughglasseditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک عکس ادیتوریال از پشت شیشه با بازتاب‌های کنترل‌شده بساز.
+
+Make an editorial photo through glass, with controlled reflections.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f030
+
+**/fisheyeeditorial**
+
+ادیتوریال چشم‌ماهی. Make an editorial photo with a very wide angle and clear fisheye distortion.
+
+Slug: `fisheyeeditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 30
+
+Prompt:
+
+```text
+/fisheyeeditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+عکس ادیتوریال با زاویه بسیار باز و اعوجاج مشخص لنز چشم‌ماهی بساز.
+
+Make an editorial photo with a very wide angle and clear fisheye distortion.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f031
+
+**/birdeyeeditorial**
+
+ادیتوریال از بالا. Turn the photo into an editorial composition from above.
+
+Slug: `birdeyeeditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 31
+
+Prompt:
+
+```text
+/birdeyeeditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+عکس را به یک ترکیب‌بندی ادیتوریال از نمای بالا تبدیل کن.
+
+Turn the photo into an editorial composition from above.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f032
+
+**/extremebirdeditorial**
+
+ادیتوریال هوایی مرتفع. Make a very high overhead view with an editorial composition.
+
+Slug: `extremebirdeditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 32
+
+Prompt:
+
+```text
+/extremebirdeditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک نمای بسیار مرتفع از بالا با ترکیب‌بندی ادیتوریال ایجاد کن.
+
+Make a very high overhead view with an editorial composition.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f033
+
+**/underglasseeditorial**
+
+ادیتوریال از زیر شیشه. Shoot the editorial from under a glass surface, looking up at the subject.
+
+Slug: `underglasseeditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 33
+
+Prompt:
+
+```text
+/underglasseeditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+عکس ادیتوریال را از زیر یک سطح شیشه‌ای و با دید رو به سوژه بساز.
+
+Shoot the editorial from under a glass surface, looking up at the subject.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f034
+
+**/upsidedowneditorial**
+
+ترکیب‌بندی وارونه. Make an editorial photo with a deliberate upside-down composition.
+
+Slug: `upsidedowneditorial`
+
+Task / facet: `image` / `camera`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Camera and framing
+
+Source item number: 34
+
+Prompt:
+
+```text
+/upsidedowneditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک عکس ادیتوریال با ترکیب‌بندی وارونه و جهت‌گیری آگاهانه ایجاد کن.
+
+Make an editorial photo with a deliberate upside-down composition.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f035
+
+**/fog**
+
+مه غلیظ. Add visible fog through the depth of the scene so the place feels foggy.
+
+Slug: `fog`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 35
+
+Prompt:
+
+```text
+/fog
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+مهی قابل‌مشاهده در عمق صحنه ایجاد کن تا محیط حال‌وهوای مه‌آلود پیدا کند.
+
+Add visible fog through the depth of the scene so the place feels foggy.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f036
+
+**/mist**
+
+مه لطیف. Add a light, soft mist. Keep the main details readable.
+
+Slug: `mist`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 36
+
+Prompt:
+
+```text
+/mist
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+مهی سبک و نرم به محیط اضافه کن؛ جزئیات اصلی صحنه خوانا بمانند.
+
+Add a light, soft mist. Keep the main details readable.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f037
+
+**/rainynight**
+
+شب بارانی. Show a rainy night with wet surfaces and reflected light.
+
+Slug: `rainynight`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 37
+
+Prompt:
+
+```text
+/rainynight
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را در یک شب بارانی با سطوح خیس و بازتاب نور نمایش بده.
+
+Show a rainy night with wet surfaces and reflected light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f038
+
+**/rain**
+
+باران. Add natural rainfall, drops, and the look of things getting wet.
+
+Slug: `rain`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 38
+
+Prompt:
+
+```text
+/rain
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+بارش طبیعی باران، قطرات و آثار خیس‌شدن را در صحنه ایجاد کن.
+
+Add natural rainfall, drops, and the look of things getting wet.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f039
+
+**/storm**
+
+هوای طوفانی. Show dark clouds and the dramatic mood of a storm.
+
+Slug: `storm`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 39
+
+Prompt:
+
+```text
+/storm
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با ابرهای تیره و حال‌وهوای دراماتیک یک طوفان نمایش بده.
+
+Show dark clouds and the dramatic mood of a storm.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f040
+
+**/snow**
+
+برف. Add falling snow and a winter mood, with believable light and texture.
+
+Slug: `snow`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 40
+
+Prompt:
+
+```text
+/snow
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+بارش برف و حال‌وهوای زمستانی را با نور و بافت باورپذیر ایجاد کن.
+
+Add falling snow and a winter mood, with believable light and texture.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f041
+
+**/sunset**
+
+نور غروب. Use warm sunset light and shadows that match it.
+
+Slug: `sunset`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 41
+
+Prompt:
+
+```text
+/sunset
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نور گرم غروب خورشید و سایه‌های متناسب با آن را ایجاد کن.
+
+Use warm sunset light and shadows that match it.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f042
+
+**/sunrise**
+
+نور طلوع. Show the scene in soft, calm early-morning light.
+
+Slug: `sunrise`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 42
+
+Prompt:
+
+```text
+/sunrise
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با نور نرم و آرام ابتدای صبح نمایش بده.
+
+Show the scene in soft, calm early-morning light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f043
+
+**/fa-goldenhour**
+
+ساعت طلایی. Use warm golden light near sunrise or sunset, with soft shadows.
+
+Slug: `fa-goldenhour`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 43
+
+Prompt:
+
+```text
+/fa-goldenhour
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نور طلایی و گرم نزدیک طلوع یا غروب را با سایه‌های نرم ایجاد کن.
+
+Use warm golden light near sunrise or sunset, with soft shadows.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f044
+
+**/fa-bluehour**
+
+ساعت آبی. Show the scene in calm blue twilight.
+
+Slug: `fa-bluehour`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 44
+
+Prompt:
+
+```text
+/fa-bluehour
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با نور آبی و آرام گرگ‌ومیش نمایش بده.
+
+Show the scene in calm blue twilight.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f045
+
+**/moonlight**
+
+نور ماه. Light the scene with cool, gentle moonlight and natural night shadows.
+
+Slug: `moonlight`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 45
+
+Prompt:
+
+```text
+/moonlight
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با نور سرد و ملایم ماه و سایه‌های طبیعی شب روشن کن.
+
+Light the scene with cool, gentle moonlight and natural night shadows.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f046
+
+**/neonlights**
+
+نورهای نئونی. Add colored neon lights and matching reflections on surfaces.
+
+Slug: `neonlights`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 46
+
+Prompt:
+
+```text
+/neonlights
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نورهای رنگی نئون و بازتاب متناسب آن‌ها روی سطوح را ایجاد کن.
+
+Add colored neon lights and matching reflections on surfaces.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f047
+
+**/darkmoody**
+
+فضای تیره و دراماتیک. Make a dim, dark space with deep shadows. Keep the main details readable.
+
+Slug: `darkmoody`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 47
+
+Prompt:
+
+```text
+/darkmoody
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+فضایی کم‌نور و تیره با سایه‌های عمیق و جزئیات اصلی قابل‌تشخیص بساز.
+
+Make a dim, dark space with deep shadows. Keep the main details readable.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f048
+
+**/softlighting**
+
+نور نرم. Light the subject with soft, diffused light and gentle shadows.
+
+Slug: `softlighting`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 48
+
+Prompt:
+
+```text
+/softlighting
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را با نور نرم و پخش‌شده و سایه‌های ملایم روشن کن.
+
+Light the subject with soft, diffused light and gentle shadows.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f049
+
+**/dramaticlighting**
+
+نورپردازی دراماتیک. Use directional light and strong contrast so the subject's form stands out.
+
+Slug: `dramaticlighting`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 49
+
+Prompt:
+
+```text
+/dramaticlighting
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نور جهت‌دار و کنتراست قوی ایجاد کن تا فرم سوژه برجسته شود.
+
+Use directional light and strong contrast so the subject's form stands out.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f050
+
+**/fa-rimlight**
+
+نور حاشیه‌ای. Add a fine rim light along the subject's edges.
+
+Slug: `fa-rimlight`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 50
+
+Prompt:
+
+```text
+/fa-rimlight
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک نور حاشیه‌ای ظریف در امتداد لبه‌های سوژه ایجاد کن.
+
+Add a fine rim light along the subject's edges.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f051
+
+**/fa-backlight**
+
+نور از پشت. Place the light behind the subject and show its natural effect.
+
+Slug: `fa-backlight`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 51
+
+Prompt:
+
+```text
+/fa-backlight
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+منبع نور را پشت سوژه قرار بده و اثر طبیعی آن را روی تصویر نشان بده.
+
+Place the light behind the subject and show its natural effect.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f052
+
+**/volumetriclight**
+
+پرتوهای حجمی. Add visible rays of light in fog or airborne particles.
+
+Slug: `volumetriclight`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 52
+
+Prompt:
+
+```text
+/volumetriclight
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+پرتوهای نور قابل‌مشاهده در مه یا ذرات معلق محیط ایجاد کن.
+
+Add visible rays of light in fog or airborne particles.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f053
+
+**/godrays**
+
+پرتوهای دراماتیک. Send distinct rays of light through clouds or gaps in the scene.
+
+Slug: `godrays`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 53
+
+Prompt:
+
+```text
+/godrays
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+پرتوهای مشخص نور را از میان ابرها یا شکاف‌های محیط عبور بده.
+
+Send distinct rays of light through clouds or gaps in the scene.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f054
+
+**/fa-bokeh**
+
+بوکه. Turn out-of-focus background lights into soft bokeh.
+
+Slug: `fa-bokeh`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 54
+
+Prompt:
+
+```text
+/fa-bokeh
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نقاط نور خارج از فوکوس را در پس‌زمینه به بوکه‌های نرم تبدیل کن.
+
+Turn out-of-focus background lights into soft bokeh.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f055
+
+**/shallowdepth**
+
+عمق میدان کم. Keep the subject sharp and blur the background with a shallow depth of field.
+
+Slug: `shallowdepth`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 55
+
+Prompt:
+
+```text
+/shallowdepth
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را واضح و پس‌زمینه را با عمق میدان کم محو نمایش بده.
+
+Keep the subject sharp and blur the background with a shallow depth of field.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f056
+
+**/cinematicbokehlighting**
+
+بوکه سینمایی. Use cinematic lighting with a blurred background and controlled bokeh.
+
+Slug: `cinematicbokehlighting`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 56
+
+Prompt:
+
+```text
+/cinematicbokehlighting
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نورپردازی سینمایی همراه با پس‌زمینه محو و بوکه‌های کنترل‌شده ایجاد کن.
+
+Use cinematic lighting with a blurred background and controlled bokeh.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f057
+
+**/volumetriclighting**
+
+نورپردازی حجمی. Strengthen the lighting with visible rays and a sense of spatial depth.
+
+Slug: `volumetriclighting`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 57
+
+Prompt:
+
+```text
+/volumetriclighting
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نورپردازی صحنه را با پرتوهای قابل‌مشاهده و عمق فضایی تقویت کن.
+
+Strengthen the lighting with visible rays and a sense of spatial depth.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f058
+
+**/3pointslighting**
+
+نورپردازی سه‌نقطه‌ای. Light the subject with a key light, a fill light, and a back light.
+
+Slug: `3pointslighting`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 58
+
+Prompt:
+
+```text
+/3pointslighting
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را با نور اصلی، نور پُرکننده و نور پشت روشن کن.
+
+Light the subject with a key light, a fill light, and a back light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f059
+
+**/balanced3lightportrait**
+
+پرتره با سه نور متعادل. Make a portrait with balanced key, fill, and back light, and natural skin texture.
+
+Slug: `balanced3lightportrait`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 59
+
+Prompt:
+
+```text
+/balanced3lightportrait
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک پرتره با نور اصلی، پُرکننده و پشت متعادل و بافت پوست طبیعی بساز.
+
+Make a portrait with balanced key, fill, and back light, and natural skin texture.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f060
+
+**/bgneoncyanandpink**
+
+پس‌زمینه نئونی دورنگ. Design the background with cyan and pink neon light.
+
+Slug: `bgneoncyanandpink`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 60
+
+Prompt:
+
+```text
+/bgneoncyanandpink
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+پس‌زمینه را با نورهای نئونی فیروزه‌ای و صورتی طراحی کن.
+
+Design the background with cyan and pink neon light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f061
+
+**/popflashcamera**
+
+فلش مستقیم موبایل. Give it a direct phone-flash look, a hard shadow, and the feeling of a snapshot.
+
+Slug: `popflashcamera`
+
+Task / facet: `image` / `atmosphere`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Light, weather, and atmosphere
+
+Source item number: 61
+
+Prompt:
+
+```text
+/popflashcamera
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+ظاهر عکس با فلش مستقیم گوشی، سایه مشخص و حس ثبت لحظه‌ای ایجاد کن.
+
+Give it a direct phone-flash look, a hard shadow, and the feeling of a snapshot.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f062
+
+**/fa-cinematic**
+
+ظاهر سینمایی. Design the light, composition, and color like a professional film frame.
+
+Slug: `fa-cinematic`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 62
+
+Prompt:
+
+```text
+/fa-cinematic
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+نور، ترکیب‌بندی و رنگ صحنه را مانند یک فریم حرفه‌ای فیلم طراحی کن.
+
+Design the light, composition, and color like a professional film frame.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f063
+
+**/studio**
+
+عکاسی استودیویی. Show the subject in a studio, with a controlled background and professional light.
+
+Slug: `studio`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 63
+
+Prompt:
+
+```text
+/studio
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را در فضای استودیویی با پس‌زمینه کنترل‌شده و نور حرفه‌ای نمایش بده.
+
+Show the subject in a studio, with a controlled background and professional light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f064
+
+**/filmgrain**
+
+دانه‌بندی فیلم. Add the fine grain of analog film.
+
+Slug: `filmgrain`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 64
+
+Prompt:
+
+```text
+/filmgrain
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+دانه‌بندی ظریف فیلم آنالوگ را به تصویر اضافه کن.
+
+Add the fine grain of analog film.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f065
+
+**/fa-anamorphic**
+
+ظاهر لنز آنامورفیک. Use an anamorphic look: stretched bokeh and controlled horizontal flare.
+
+Slug: `fa-anamorphic`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 65
+
+Prompt:
+
+```text
+/fa-anamorphic
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+ظاهر سینمایی لنز آنامورفیک را با بوکه کشیده و فلر افقی کنترل‌شده ایجاد کن.
+
+Use an anamorphic look: stretched bokeh and controlled horizontal flare.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f066
+
+**/fa-motionblur**
+
+تاری حرکت. Add natural directional blur on the parts that are moving.
+
+Slug: `fa-motionblur`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 66
+
+Prompt:
+
+```text
+/fa-motionblur
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تاری جهت‌دار و طبیعی ناشی از حرکت را در بخش‌های متحرک ایجاد کن.
+
+Add natural directional blur on the parts that are moving.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f067
+
+**/fa-longexposure**
+
+نوردهی طولانی. Use a long-exposure effect: light trails, or moving objects softly blurred.
+
+Slug: `fa-longexposure`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 67
+
+Prompt:
+
+```text
+/fa-longexposure
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+اثر نوردهی طولانی را با رد نور یا محوشدن نرم اجسام متحرک ایجاد کن.
+
+Use a long-exposure effect: light trails, or moving objects softly blurred.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f068
+
+**/fa-freezeaction**
+
+ثبت حرکت سریع. Freeze one moment of fast movement, with the subject sharp and the detail locked.
+
+Slug: `fa-freezeaction`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 68
+
+Prompt:
+
+```text
+/fa-freezeaction
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک لحظه از حرکت سریع را با سوژه واضح و جزئیات منجمدشده ثبت کن.
+
+Freeze one moment of fast movement, with the subject sharp and the detail locked.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f069
+
+**/vintage**
+
+عکس قدیمی. Set the color, contrast, and texture to the mood of an old photograph.
+
+Slug: `vintage`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 69
+
+Prompt:
+
+```text
+/vintage
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+رنگ، کنتراست و بافت تصویر را با حال‌وهوای عکس‌های قدیمی تنظیم کن.
+
+Set the color, contrast, and texture to the mood of an old photograph.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f070
+
+**/fa-retro**
+
+سبک رترو. Design the palette, clothing, and details so they belong to a past era.
+
+Slug: `fa-retro`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 70
+
+Prompt:
+
+```text
+/fa-retro
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با پالت، پوشش و جزئیات هماهنگ با یک دوره گذشته طراحی کن.
+
+Design the palette, clothing, and details so they belong to a past era.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f071
+
+**/oldmoney**
+
+شیک و کلاسیک. Use a quiet classic style: well-cut clothes and calm colors.
+
+Slug: `oldmoney`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 71
+
+Prompt:
+
+```text
+/oldmoney
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+استایلی کلاسیک و کم‌زرق‌وبرق با پوشش خوش‌دوخت و رنگ‌های آرام ایجاد کن.
+
+Use a quiet classic style: well-cut clothes and calm colors.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f072
+
+**/luxury**
+
+ظاهر لوکس. Make a luxury picture: quality materials, precise light, and a considered composition.
+
+Slug: `luxury`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 72
+
+Prompt:
+
+```text
+/luxury
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک تصویر لوکس با متریال باکیفیت، نور دقیق و ترکیب‌بندی سنجیده بساز.
+
+Make a luxury picture: quality materials, precise light, and a considered composition.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f073
+
+**/minimalist**
+
+مینیمال. Simplify the composition. Keep what is necessary, and leave enough empty space.
+
+Slug: `minimalist`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 73
+
+Prompt:
+
+```text
+/minimalist
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+ترکیب‌بندی را ساده و خلوت کن؛ عناصر ضروری و فضای خالی کافی حفظ شوند.
+
+Simplify the composition. Keep what is necessary, and leave enough empty space.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f074
+
+**/fa-editorial**
+
+عکس ادیتوریال. Make it like a professional magazine photo, with a visual story and a precise composition.
+
+Slug: `fa-editorial`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 74
+
+Prompt:
+
+```text
+/fa-editorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را مانند عکس حرفه‌ای مجله با روایت بصری و ترکیب‌بندی دقیق بساز.
+
+Make it like a professional magazine photo, with a visual story and a precise composition.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f075
+
+**/fashion**
+
+عکاسی مد. Make a professional fashion photo that emphasizes clothes, pose, and coordinated light.
+
+Slug: `fashion`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 75
+
+Prompt:
+
+```text
+/fashion
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک عکس مد حرفه‌ای با تأکید بر لباس، ژست و نورپردازی هماهنگ بساز.
+
+Make a professional fashion photo that emphasizes clothes, pose, and coordinated light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f076
+
+**/streetstyle**
+
+استایل خیابانی. Show the subject in urban clothes and a natural pose, on the street.
+
+Slug: `streetstyle`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 76
+
+Prompt:
+
+```text
+/streetstyle
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را با پوشش شهری و ژست طبیعی در محیط خیابان نمایش بده.
+
+Show the subject in urban clothes and a natural pose, on the street.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f077
+
+**/fa-magazinecover**
+
+ترکیب‌بندی جلد مجله. Compose it like a magazine cover, with empty space for a headline.
+
+Slug: `fa-magazinecover`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 77
+
+Prompt:
+
+```text
+/fa-magazinecover
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با ترکیب‌بندی مناسب جلد مجله و فضای خالی برای تیتر طراحی کن.
+
+Compose it like a magazine cover, with empty space for a headline.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f078
+
+**/fa-polaroid**
+
+ظاهر پولاروید. Give it Polaroid color and texture, and a fitting border.
+
+Slug: `fa-polaroid`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 78
+
+Prompt:
+
+```text
+/fa-polaroid
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با رنگ و بافت عکس فوری پولاروید و حاشیه متناسب بساز.
+
+Give it Polaroid color and texture, and a fitting border.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f079
+
+**/disposablecamera**
+
+دوربین یک‌بارمصرف. Give it the raw, snapshot look of a disposable camera, with grain and flash.
+
+Slug: `disposablecamera`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 79
+
+Prompt:
+
+```text
+/disposablecamera
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+ظاهر خام و لحظه‌ای عکس دوربین یک‌بارمصرف با دانه‌بندی و فلش ایجاد کن.
+
+Give it the raw, snapshot look of a disposable camera, with grain and flash.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f080
+
+**/35mmfilm**
+
+فیلم ۳۵ میلی‌متری. Match the color, contrast, and grain of 35mm film.
+
+Slug: `35mmfilm`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 80
+
+Prompt:
+
+```text
+/35mmfilm
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+رنگ، کنتراست و دانه‌بندی تصویر را شبیه عکاسی با فیلم ۳۵ میلی‌متری کن.
+
+Match the color, contrast, and grain of 35mm film.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f081
+
+**/instantphoto**
+
+عکس فوری. Give it the look of a printed instant photo, with slightly soft natural color.
+
+Slug: `instantphoto`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 81
+
+Prompt:
+
+```text
+/instantphoto
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با ظاهر عکس چاپ‌شده دوربین فوری و رنگ‌های طبیعی کمی نرم بساز.
+
+Give it the look of a printed instant photo, with slightly soft natural color.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f082
+
+**/paparazzieditorial**
+
+ادیتوریال پاپاراتزی. Make an editorial with the feeling of a sudden shot and an informal pose.
+
+Slug: `paparazzieditorial`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 82
+
+Prompt:
+
+```text
+/paparazzieditorial
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+عکسی با حس ثبت ناگهانی و ژست غیررسمی، در قالب ادیتوریال ایجاد کن.
+
+Make an editorial with the feeling of a sudden shot and an informal pose.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f083
+
+**/vintage90sbrazil**
+
+برزیل دهه ۱۹۹۰. Design the clothes, color, and visual detail of Brazil in the 1990s.
+
+Slug: `vintage90sbrazil`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 83
+
+Prompt:
+
+```text
+/vintage90sbrazil
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با پوشش، رنگ و جزئیات بصری برزیل در دهه ۱۹۹۰ طراحی کن.
+
+Design the clothes, color, and visual detail of Brazil in the 1990s.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f084
+
+**/vintage50sbrazil**
+
+برزیل دهه ۱۹۵۰. Design the clothes, color, and visual detail of Brazil in the 1950s.
+
+Slug: `vintage50sbrazil`
+
+Task / facet: `image` / `fashion`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Photography, fashion, and editorial
+
+Source item number: 84
+
+Prompt:
+
+```text
+/vintage50sbrazil
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با پوشش، رنگ و جزئیات بصری برزیل در دهه ۱۹۵۰ طراحی کن.
+
+Design the clothes, color, and visual detail of Brazil in the 1950s.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f085
+
+**/fa-cyberpunk**
+
+جهان سایبرپانک. Build a future city with neon, technology, and a cyberpunk mood.
+
+Slug: `fa-cyberpunk`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 85
+
+Prompt:
+
+```text
+/fa-cyberpunk
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک فضای شهری آینده‌نگر با نور نئون، فناوری و حال‌وهوای سایبرپانک بساز.
+
+Build a future city with neon, technology, and a cyberpunk mood.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f086
+
+**/fa-underwater**
+
+زیر آب. Show the scene underwater, with refraction, suspended particles, and natural water color.
+
+Slug: `fa-underwater`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 86
+
+Prompt:
+
+```text
+/fa-underwater
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را زیر آب با شکست نور، ذرات معلق و رنگ‌های طبیعی محیط نمایش بده.
+
+Show the scene underwater, with refraction, suspended particles, and natural water color.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f087
+
+**/space**
+
+فضای کیهانی. Place the subject in a space setting, with light and scale that fit.
+
+Slug: `space`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 87
+
+Prompt:
+
+```text
+/space
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را در یک محیط فضایی یا کیهانی با نور و مقیاس هماهنگ قرار بده.
+
+Place the subject in a space setting, with light and scale that fit.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f088
+
+**/desert**
+
+بیابان. Set the scene in a desert, with natural sand texture and fitting light.
+
+Slug: `desert`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 88
+
+Prompt:
+
+```text
+/desert
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را در یک منظره بیابانی با بافت طبیعی شن و نور متناسب طراحی کن.
+
+Set the scene in a desert, with natural sand texture and fitting light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f089
+
+**/forest**
+
+جنگل. Place the subject in a natural forest, with vegetation and believable depth.
+
+Slug: `forest`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 89
+
+Prompt:
+
+```text
+/forest
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+سوژه را در یک جنگل طبیعی با پوشش گیاهی و عمق فضایی باورپذیر قرار بده.
+
+Place the subject in a natural forest, with vegetation and believable depth.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f090
+
+**/mountains**
+
+کوهستان. Make a mountain landscape with scale, detail, and dramatic light.
+
+Slug: `mountains`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 90
+
+Prompt:
+
+```text
+/mountains
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک منظره کوهستانی با مقیاس، جزئیات و نورپردازی دراماتیک ایجاد کن.
+
+Make a mountain landscape with scale, detail, and dramatic light.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f091
+
+**/beach**
+
+ساحل. Set the scene on a shore, with sand, water, and natural light that agree.
+
+Slug: `beach`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 91
+
+Prompt:
+
+```text
+/beach
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را در محیط ساحلی با شن، آب و نور طبیعی هماهنگ طراحی کن.
+
+Set the scene on a shore, with sand, water, and natural light that agree.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f092
+
+**/cityscape**
+
+منظره شهری. Build a city view with architecture, streets, and clear spatial depth.
+
+Slug: `cityscape`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 92
+
+Prompt:
+
+```text
+/cityscape
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک نمای شهری با معماری، خیابان‌ها و عمق فضایی مشخص بساز.
+
+Build a city view with architecture, streets, and clear spatial depth.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f093
+
+**/nightcity**
+
+شهر در شب. Show the city at night, with lights, shadows, and natural reflections.
+
+Slug: `nightcity`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 93
+
+Prompt:
+
+```text
+/nightcity
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+شهر را در شب با چراغ‌ها، سایه‌ها و بازتاب‌های طبیعی نمایش بده.
+
+Show the city at night, with lights, shadows, and natural reflections.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f094
+
+**/fa-futuristic**
+
+فضای آینده‌نگر. Build the place with advanced architecture and technology, in one coherent future design.
+
+Slug: `fa-futuristic`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 94
+
+Prompt:
+
+```text
+/fa-futuristic
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+محیط را با معماری و فناوری پیشرفته و طراحی یکپارچه آینده‌نگر بساز.
+
+Build the place with advanced architecture and technology, in one coherent future design.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f095
+
+**/postapocalyptic**
+
+جهان پس از فاجعه. Set the scene in a ruined world, with wear and believable story detail.
+
+Slug: `postapocalyptic`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 95
+
+Prompt:
+
+```text
+/postapocalyptic
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را در جهانی ویران‌شده با آثار فرسودگی و جزئیات روایی باورپذیر بساز.
+
+Set the scene in a ruined world, with wear and believable story detail.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f096
+
+**/fantasy**
+
+جهان فانتزی. Build an imaginative, magical world with visuals that agree and a clear story.
+
+Slug: `fantasy`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 96
+
+Prompt:
+
+```text
+/fantasy
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک جهان خیال‌انگیز و جادویی با عناصر بصری هماهنگ و روایت مشخص بساز.
+
+Build an imaginative, magical world with visuals that agree and a clear story.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f097
+
+**/scifi**
+
+علمی‌تخیلی. Design the scene in a science-fiction style, with technology, setting, and detail that agree.
+
+Slug: `scifi`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 97
+
+Prompt:
+
+```text
+/scifi
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+صحنه را با فناوری، محیط و جزئیات منسجم در سبک علمی‌تخیلی طراحی کن.
+
+Design the scene in a science-fiction style, with technology, setting, and detail that agree.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f098
+
+**/medieval**
+
+فضای قرون وسطی. Bring the place, clothing, and objects into a medieval mood.
+
+Slug: `medieval`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 98
+
+Prompt:
+
+```text
+/medieval
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+محیط، پوشش و اشیا را با حال‌وهوای تاریخی قرون وسطی هماهنگ کن.
+
+Bring the place, clothing, and objects into a medieval mood.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f099
+
+**/samurai**
+
+فضای سامورایی. Make a cinematic scene with clothing and space inspired by samurai.
+
+Slug: `samurai`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 99
+
+Prompt:
+
+```text
+/samurai
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+یک صحنه سینمایی با پوشش و فضای الهام‌گرفته از سامورایی‌ها ایجاد کن.
+
+Make a cinematic scene with clothing and space inspired by samurai.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
+```
+## f100
+
+**/noir**
+
+سبک نوآر. Use deep shadows, high-contrast light, and a film-noir mood.
+
+Slug: `noir`
+
+Task / facet: `image` / `scenes`
+
+Source: Farshad image guide (`farshad`)
+
+Catalog: Environment and worldbuilding
+
+Source item number: 100
+
+Prompt:
+
+```text
+/noir
+
+This is community shorthand, not an official model command. Follow this direction exactly:
+
+تصویر را با سایه‌های عمیق، نور پرکنتراست و حال‌وهوای فیلم نوآر بساز.
+
+Use deep shadows, high-contrast light, and a film-noir mood.
+
+برای عکس اشخاص: هویت، فرم چهره، تناسبات و ویژگی‌های طبیعی فرد را با بیشترین دقت حفظ کن. چهره را زیباتر یا بازطراحی نکن؛ فقط تغییر خواسته‌شده را اعمال کن.
+On a portrait, keep identity, face shape, proportions, and natural features. Do not beautify or redesign the face. Apply only the requested change.
+
+Use the image I upload as the subject, or the scene I describe. Keep the subject recognizable. Do not add unrelated people, logos, or text.
 ```
