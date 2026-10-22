@@ -422,7 +422,7 @@ export function Cuebook({ onAgent }: { onAgent?: () => void }) {
             />
             <SourceBlock
               title="Farshad image guide"
-              body="100 picture codes from Farshad Farahani’s Persian guide, rewritten from the first 100 codes of the Portuguese set by @canalcarlosalbertob. They are short names, not official ChatGPT commands. Copy the Persian line and add color, framing, or place. 4K and 8K ask for detail only — they do not set the file size. On a portrait, the prompt also asks to keep the face and change only what the code names."
+              body="100 picture codes from Farshad Farahani’s Persian guide, rewritten from the first 100 codes of the Portuguese set by @canalcarlosalbertob. They are short names, not official ChatGPT commands. Copy the Persian line and add color, framing, or place. 4K and 8K ask for detail only — they do not set the file size. On a portrait, the prompt also asks to keep the face and change only what the code names. Where that name was already in the book, this guide uses an fa- prefix, such as /fa-goldenhour."
             />
             <SourceBlock
               title="Code"
